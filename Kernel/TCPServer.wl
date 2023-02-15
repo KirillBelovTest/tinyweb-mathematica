@@ -18,12 +18,12 @@ BeginPackage["JerryI`Tinyweb`TCPServer`", {"KirillBelov`Objects`"}];
 ClearAll["`*"]; 
 
 
-TCPPacketBufferingServer::usage = 
-"TCPPacketBufferingServer[opts] packet buffer"; 
+TCPServer::usage = 
+"TCPServer[opts] TCP server"; 
 
 
-TCPPacketHandler::usage = 
-"TCPPacketHandler[buffer] handler received TCP packet"; 
+TCPPacketHandle::usage = 
+"TCPPacketHandle[server, packet] TCP server"; 
 
 
 (* ::Section::Closed:: *)
@@ -45,7 +45,7 @@ Begin["`Private`"];
 *)
 
 
-CreateType[TCPPacketBufferingServer, Object, Identity, {
+CreateType[TCPServer, Object, Identity, {
 	"ClientStore" -> <||>, 
 	"CompleteChecker" -> <||>, 
 	"MessageHandler" -> <||>
@@ -57,38 +57,39 @@ CreateType[TCPPacketBufferingServer, Object, Identity, {
 
 
 (*
-	Parameterized TCP packet handler. 
-	Needed to store data if the request does not fit into one TCP packet. 
-	By default it does nothing. 
-	All packet buffering logic must be implemented in a specific handler.
+	Server definition overload when processing TCP packets. 
+	Packets are processed as follows: 
+	1. As soon as a packet is received, its status is first checked. 
+	2. If the packet is complete, processing begins.
+	3. Functions that check the message type and 
+	   perform processing and forming the response are stored as server properties
+	4. If the packet is not completed - it is stored in the buffer along with 
+	   extended information about its expected length and current state
 *)
 
 
-TCPPacketBufferingServer /: TCPPacketHandler[buffer_TCPPacketBufferingServer, packet_?AssociationQ] := 
-Module[{packetState, message, result}, 
+TCPServer /: TCPPacketHandle[server_TCPServer, packet_Association] := 
+Module[{packetState, client, message, result}, 
 
-	packetState = checkPacket[buffer, packet]; 
+	client = packet["SourceSocket"]; 
+	packetState = checkPacket[server, packet]; 
 
 	If[packetState["Completed"], 
-		message = mergeMessage[buffer, packet]; 
-		clearClientBuffer[buffer, packet]; 
-		result = invokeMessageHandler[buffer, message]; 
-		sendResponse[buffer, packet, result], 
+		message = mergeMessage[server, packet]; 
+		clearClientBuffer[server, packet]; 
+		result = invokeMessageHandler[server, client, message]; 
+		sendResponse[server, client, result], 
 	(*Else*)
-		saveClientBuffer[buffer, Join[packet, packetState]]
+		saveClientBuffer[server, Join[packet, packetState]]
 	]
 ]; 
-
-
-TCPPacketBufferingServer /: TCPPacketHandler[buffer_TCPPacketBufferingServer] := 
-Function[packet, TCPPacketHandler[buffer, packet]]
 
 
 (* ::Section::Closed:: *)
 (*Internal functions*)
 
 
-TCPPacketBufferingServer /: checkPacket[buffer_TCPPacketBufferingServer, packet_Association] := 
+TCPServer /: checkPacket[buffer_TCPServer, packet_Association] := 
 Module[{
 	packetData, 
 	uuid, clientStore, 
@@ -113,17 +114,33 @@ Module[{
 
 	completed = storedLength + packetLength >= expectedLength; 
 
+	(*Log*)
+	Print[DateString[]]; 
+	Print[StringTemplate["Received packet state: \n\tCompleted = `1`; \n\tPacketLength = `2`; \n\tStoredLength = `3`; \n\tExpectedLength = `4`"][
+		completed, 
+		packetLength, 
+		storedLength, 
+		expectedLength
+	]]; 
+	Print[]; 
+
 	(*Return*)
 	<|
 		"Completed" -> completed, 
 		"ExpectedLength" -> expectedLength, 
-		"StoredLength" -> storedLength
+		"StoredLength" -> storedLength, 
+		"PacketLength" -> packetLength
 	|>
 ]
 
 
-TCPPacketBufferingServer /: mergeMessage[buffer_TCPPacketBufferingServer, packet_Association] := 
+TCPServer /: mergeMessage[buffer_TCPServer, packet_Association] := 
 Module[{uuid = packet["SourceSocket"][[1]]}, 
+	
+	(*Log*)
+	Print[DateString[]]; 
+	(Print[StringTemplate["Request: \n`1`"][#]]; Print[]; #)& @  
+
 	ByteArrayToString @ 
 	If[KeyExistsQ[buffer["ClientStore"], uuid], 
 		Apply[Join] @ 
@@ -135,17 +152,19 @@ Module[{uuid = packet["SourceSocket"][[1]]},
 ]
 
 
-TCPPacketBufferingServer /: invokeMessageHandler[buffer_TCPPacketBufferingServer, message_String] := 
-#[[2]][message]& @ SelectFirst[#[[1]][message]&] @ buffer["MessageHandler"]
+TCPServer /: invokeMessageHandler[buffer_TCPServer, client_SocketObject, message_String] := 
+#[[2]][client, message]& @ SelectFirst[#[[1]][message]&] @ buffer["MessageHandler"]
 
 
-TCPPacketBufferingServer /: sendResponse[buffer_TCPPacketBufferingServer, packet_Association, result_String] := 
-Module[{client = packet["SourceSocket"]}, 
+TCPServer /: sendResponse[buffer_TCPServer, client_SocketObject, result_String] := (
+	Print[DateString[]]; 
+	Print[StringTemplate["Response: \n`1`"][result]]; 
+	Print[]; 
 	WriteString[client, result]
-]
+)
 
 
-TCPPacketBufferingServer /: saveClientBuffer[buffer_TCPPacketBufferingServer, packetExtended_Association] := 
+TCPServer /: saveClientBuffer[buffer_TCPServer, packetExtended_Association] := 
 With[{uuid = packetExtended["SourceSocket"][[1]]}, 
 	If[KeyExistsQ[buffer["ClientStore"], uuid], 
 		buffer["ClientStore", uuid]["Append", packetExtended], 
@@ -154,7 +173,7 @@ With[{uuid = packetExtended["SourceSocket"][[1]]},
 ]
 
 
-TCPPacketBufferingServer /: clearClientBuffer[buffer_TCPPacketBufferingServer, packet_Association] := 
+TCPServer /: clearClientBuffer[buffer_TCPServer, packet_Association] := 
 With[{uuid = packet["SourceSocket"][[1]]}, 
 	If[KeyExistsQ[buffer["ClientStore"], uuid], 
 		buffer["ClientStore", uuid]["DropAll"]

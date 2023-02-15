@@ -2997,18 +2997,33 @@ excluded using ",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{
-  "PacletDirectoryLoad", "[", 
-   "\"\<C:\\\\Users\\\\Kirill\\\\Projects\\\\tinyweb-mathematica\>\"", "]"}], 
-  ";"}]], "Input", "Excluded",
+  RowBox[{"$HistoryLength", " ", "=", " ", "0"}], ";"}]], "Input", "Excluded",
  InitializationCell->True,
+ CellLabel->"In[1]:=",
+ CellID->271262706,ExpressionUUID->"7e2b875b-6c2e-4bec-bea4-5fd3501da985"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
+ InitializationCell->True,
+ CellLabel->"In[2]:=",
+ CellID->793481494,ExpressionUUID->"0938cda3-e82b-49e8-87a5-d3c08a93b805"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PacletDirectoryLoad", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
+ InitializationCell->True,
+ CellLabel->"In[3]:=",
  CellID->996717066,ExpressionUUID->"dc3ffea7-7c9c-4fd7-937f-b87baef4ef31"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"Needs", "[", "\"\<JerryI`Tinyweb`\>\"", "]"}], 
+  RowBox[{"Get", "[", "\"\<JerryI`Tinyweb`\>\"", "]"}], 
   ";"}]], "Input", "Excluded",
  InitializationCell->True,
+ CellLabel->"In[4]:=",
  CellID->172764492,ExpressionUUID->"daa46fa9-aa49-4f86-b934-0632a26ded25"]
 }, Open  ]],
 
@@ -3016,29 +3031,6 @@ Cell[CellGroupData[{
 
 Cell["Basic Examples", "Subsection",
  CellID->462042388,ExpressionUUID->"b1b8f228-4649-4e09-9303-603aa3b25bf3"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{
-   RowBox[{"$HistoryLength", " ", "=", " ", "0"}], ";", " ", 
-   RowBox[{"SetDirectory", "[", 
-    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
-  " "}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"PacletDirectoryUnload", "[", 
-    RowBox[{"Directory", "[", "]"}], "]"}], ";", " ", 
-   RowBox[{"PacletDirectoryLoad", "[", 
-    RowBox[{"Directory", "[", "]"}], "]"}], ";"}], 
-  " "}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"Get", "[", "\"\<JerryI`Tinyweb`\>\"", "]"}], ";"}], 
-  " "}]}], "Input",
- CellChangeTimes->{{3.8854343662125363`*^9, 3.885434400383457*^9}, {
-  3.8854345450017843`*^9, 3.885434554536023*^9}, {3.885449611998692*^9, 
-  3.885449619431678*^9}},
- CellID->782156710,ExpressionUUID->"c83bffeb-266e-4690-b856-3121d3c98d8b"],
 
 Cell[BoxData[
  RowBox[{
@@ -3048,96 +3040,129 @@ Cell[BoxData[
     "\"\<HTTP/1.1 200 OK\\r\\nDate: <* Now *>\\r\\nContent-Length: \
 `1`\\r\\nContent-Type: text/html\\r\\nConnection: Closed\\r\\n\\r\\n`2`\>\"", 
     "]"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.88544605808388*^9, 3.88544605808388*^9}, 
-   3.885446281839097*^9, 3.885446822954749*^9, {3.885449289806818*^9, 
-   3.885449295088603*^9}, {3.885449416077026*^9, 3.8854494187848806`*^9}, {
-   3.88544960405221*^9, 3.8854496054864845`*^9}},
- CellID->616298750,ExpressionUUID->"8270331d-c239-445a-9669-ca562e5f03e3"],
+ CellLabel->"In[5]:=",
+ CellID->516948691,ExpressionUUID->"b8c18648-a205-47e5-814d-f2e573271b34"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"createResponse", "[", "expr_", "]"}], " ", ":=", " ", 
-  RowBox[{"okResponseTemplate", "[", 
-   RowBox[{
-    RowBox[{"StringLength", "[", 
+  RowBox[{
+   RowBox[{"createResponse", "[", "expr_", "]"}], ":=", "\[IndentingNewLine]", 
+   RowBox[{"okResponseTemplate", "[", 
+    RowBox[{
+     RowBox[{"StringLength", "[", 
+      RowBox[{"ExportString", "[", 
+       RowBox[{"expr", ",", "\"\<Text\>\""}], "]"}], "]"}], ",", 
      RowBox[{"ExportString", "[", 
-      RowBox[{"expr", ",", " ", "\"\<Text\>\""}], "]"}], "]"}], ",", " ", 
-    RowBox[{"ExportString", "[", 
-     RowBox[{"expr", ",", " ", "\"\<Text\>\""}], "]"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.8854462839862146`*^9, 3.8854463887735386`*^9}, {
-   3.885448614563959*^9, 3.8854486152893486`*^9}, {3.8854495746929073`*^9, 
-   3.8854495982705097`*^9}, 3.8854496859540167`*^9},
- CellID->42290204,ExpressionUUID->"03f2a7d3-a3a3-4cc7-bf72-5c459331f73f"],
+      RowBox[{"expr", ",", "\"\<Text\>\""}], "]"}]}], "]"}]}], ";"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->301673618,ExpressionUUID->"f24ee654-bd7e-46ec-a56c-d1cd5489dbdd"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"server", " ", "=", " ", 
-    RowBox[{"TCPPacketBufferingServer", "[", "]"}]}], ";"}], " "}]], "Input",
- CellChangeTimes->{{3.885446473700249*^9, 3.8854464950063057`*^9}, {
-  3.8854491199189262`*^9, 3.885449148458883*^9}, {3.885449226934415*^9, 
-  3.885449227865856*^9}, {3.8854495576534123`*^9, 3.8854495577552614`*^9}},
- CellID->1311148,ExpressionUUID->"a5645a7c-66e8-46dc-992e-df243df8720c"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"server", "[", "\"\<CompleteChecker\>\"", "]"}], " ", "=", " ", 
-   RowBox[{"<|", 
-    RowBox[{
-     RowBox[{"\"\<GET\>\"", " ", "->", " ", 
-      RowBox[{"HTTPGetQ", " ", "->", " ", "HTTPGetCompletedQ"}]}], ",", " ", 
-     RowBox[{"\"\<ERR\>\"", " ", "->", " ", 
+ RowBox[{"server", "=", 
+  RowBox[{"TCPServer", "[", 
+   RowBox[{
+    RowBox[{"\"\<CompleteChecker\>\"", "->", 
+     RowBox[{"<|", 
       RowBox[{
-       RowBox[{"(", 
-        RowBox[{"True", "&"}], ")"}], " ", "->", " ", 
-       RowBox[{"(", 
+       RowBox[{"\"\<GET\>\"", "->", 
+        RowBox[{"HTTPGetQ", "->", "HTTPGetDataLength"}]}], ",", 
+       RowBox[{"\"\<ERR\>\"", "->", 
         RowBox[{
-         RowBox[{"<|", 
-          RowBox[{"\"\<ExpectedLength\>\"", " ", "->", " ", "0"}], "|>"}], 
-         "&"}], ")"}]}]}]}], "|>"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.8854465059809265`*^9, 3.8854465960919085`*^9}, 
-   3.8854467190811267`*^9, {3.8854468042279887`*^9, 3.885446804291353*^9}, {
-   3.8854468778219876`*^9, 3.8854468780686135`*^9}, 3.885449232926556*^9, 
-   3.885449429492948*^9, {3.885449486401801*^9, 3.8854495487218494`*^9}},
- CellID->510379070,ExpressionUUID->"65faa9d0-4a9b-48ae-b1c8-91840dc4b51f"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"server", "[", "\"\<MessageHandler\>\"", "]"}], " ", "=", " ", 
-   RowBox[{"<|", 
-    RowBox[{
-     RowBox[{"\"\<GET\>\"", " ", "->", " ", 
-      RowBox[{"HTTPGetQ", " ", "->", " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"createResponse", "[", "\"\<Hello!\>\"", "]"}], "&"}], 
-        ")"}]}]}], ",", " ", 
-     RowBox[{"\"\<ERR\>\"", " ", "->", " ", 
+         RowBox[{"(", 
+          RowBox[{"True", "&"}], ")"}], "->", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"<|", 
+            RowBox[{"\"\<ExpectedLength\>\"", "->", "0"}], "|>"}], "&"}], 
+          ")"}]}]}]}], "|>"}]}], ",", 
+    RowBox[{"\"\<MessageHandler\>\"", "->", 
+     RowBox[{"<|", 
       RowBox[{
-       RowBox[{"(", 
-        RowBox[{"True", "&"}], ")"}], "->", 
-       RowBox[{"(", 
-        RowBox[{"\"\<ERROR\>\"", "&"}], ")"}]}]}]}], "|>"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.8854467265006857`*^9, 3.885446768606471*^9}, {
-   3.8854467988374014`*^9, 3.8854468026560574`*^9}, {3.885446853616083*^9, 
-   3.8854468760255623`*^9}, {3.8854491603779078`*^9, 3.885449201992958*^9}, 
-   3.885449238721706*^9, {3.8854494310085225`*^9, 3.885449479670723*^9}, {
-   3.885449552891312*^9, 3.8854495530825768`*^9}},
- CellID->147296324,ExpressionUUID->"46e3544a-204d-4dcf-93e3-fa9486bf96f6"],
+       RowBox[{"\"\<GET\>\"", "->", 
+        RowBox[{"HTTPGetQ", "->", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"createResponse", "[", "\"\<Hello!\>\"", "]"}], "&"}], 
+          ")"}]}]}], ",", 
+       RowBox[{"\"\<ERR\>\"", "->", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"True", "&"}], ")"}], "->", 
+         RowBox[{"(", 
+          RowBox[{"\"\<ERROR\>\"", "&"}], ")"}]}]}]}], "|>"}]}]}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->2456155,ExpressionUUID->"0310edb4-fd36-4584-8821-0bc1ced54d78"],
 
 Cell[BoxData[
- RowBox[{"listener", " ", "=", " ", 
-  RowBox[{"SocketListen", "[", 
-   RowBox[{"8000", ",", 
-    RowBox[{"TCPPacketHandler", "[", "server", "]"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.885446870343303*^9, 3.885446902917833*^9}, {
-  3.885446958757885*^9, 3.8854469748756876`*^9}, {3.8854471219094987`*^9, 
-  3.88544713732272*^9}, {3.885447169972757*^9, 3.8854471713616476`*^9}, {
-  3.885449212786048*^9, 3.88544922020898*^9}, {3.8854494333648186`*^9, 
-  3.885449440604375*^9}},
- CellID->464676649,ExpressionUUID->"d8e006b1-54da-4af8-b5fb-03dd57b649e1"]
+ RowBox[{"SocketListen", "[", 
+  RowBox[{"8000", ",", 
+   RowBox[{"server", " ", "@*", " ", "TCPPacketHandle"}]}], "]"}]], "Input",
+ CellLabel->"In[8]:=",
+ CellID->708810093,ExpressionUUID->"b64e2652-7db7-4f2e-815a-74959a4bd553"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"server", " ", "@", " ", 
+  RowBox[{"TCPPacketHandle", "[", "temp", "]"}]}]], "Input",
+ CellLabel->"In[10]:=",
+ CellID->496481403,ExpressionUUID->"f03ba77a-30b9-48a8-ae65-9e701d9d5d92"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TemplateObject", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Received packet state: \\n\\tCompleted = \"\>", ",", 
+     RowBox[{"TemplateSlot", "[", "1", "]"}], 
+     ",", "\<\"; \\n\\tPacketLength = \"\>", ",", 
+     RowBox[{"TemplateSlot", "[", "2", "]"}], 
+     ",", "\<\"; \\n\\tStoredLength = \"\>", ",", 
+     RowBox[{"TemplateSlot", "[", "3", "]"}], 
+     ",", "\<\"; \\n\\tExpectedLength = \"\>", ",", 
+     RowBox[{"TemplateSlot", "[", "4", "]"}]}], "}"}], ",", 
+   RowBox[{"CombinerFunction", "\[Rule]", "StringJoin"}], ",", 
+   RowBox[{"InsertionFunction", "\[Rule]", "TextString"}]}], "]"}]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->566044404,ExpressionUUID->"782f1f50-198c-41ee-94ff-d70b6071357c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"[ - - \"\>", 
+   "\[InvisibleSpace]", "\<\"Thu 16 Feb 2023 00:57:23\"\>", 
+   "\[InvisibleSpace]", "\<\" - - ]\"\>"}],
+  SequenceForm["[ - - ", "Thu 16 Feb 2023 00:57:23", " - - ]"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->912017279,ExpressionUUID->"db99b3e4-d1fc-4f6f-a57f-caaf7aa86950"],
+
+Cell[BoxData["\<\"Request: \\nGET / HTTP/1.1\\r\\nUser-Agent: \
+PostmanRuntime/7.31.0\\r\\nAccept: */*\\r\\nCache-Control: \
+no-cache\\r\\nPostman-Token: 5dbeb491-76e4-48b5-aac2-c799816bc2dc\\r\\nHost: \
+localhost:8000\\r\\nAccept-Encoding: gzip, deflate, br\\r\\nConnection: \
+keep-alive\\r\\n\\r\\n\"\>"], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->7384803,ExpressionUUID->"7776ca14-4a4e-4791-8df6-ccb0eb4e2092"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"[ - - \"\>", 
+   "\[InvisibleSpace]", "\<\"Thu 16 Feb 2023 00:57:23\"\>", 
+   "\[InvisibleSpace]", "\<\" - - ]\"\>"}],
+  SequenceForm["[ - - ", "Thu 16 Feb 2023 00:57:23", " - - ]"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->152393046,ExpressionUUID->"4f70621e-0189-4995-bb04-825dfad20ba6"],
+
+Cell[BoxData["\<\"Response: \\nHTTP/1.1 200 OK\\r\\nDate: Thu 16 Feb 2023 \
+00:57:23\\r\\nContent-Length: 6\\r\\nContent-Type: text/html\\r\\nConnection: \
+Closed\\r\\n\\r\\nHello!\"\>"], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->538306313,ExpressionUUID->"aeac608e-f4bf-4df1-9a0f-ccb0995ac050"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -4989,6 +5014,7 @@ the following:\n\[FilledSmallSquare] Executes Shell or RUN commands\n\
                     ContentPadding -> False], 
                     MouseAppearanceTag["LinkHand"]], ShowStringCharacters -> 
                     True, FontFamily -> "Source Sans Pro"]]], 
+                    
                     "\n\[FilledSmallSquare] Interacts with external libraries\
 \n\[FilledSmallSquare] Reads or writes to streams or sockets\n\
 \[FilledSmallSquare] Launches parallel kernels, subkernels or GPUs"}], 
@@ -5157,7 +5183,7 @@ Cell["Additional information about limitations, issues, etc.", "Text",
 }, Open  ]]
 },
 WindowSize->{958, 980},
-WindowMargins->{{-7, Automatic}, {Automatic, 0}},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 WindowTitle->"Tinyweb | Definition Notebook",
 TaggingRules->{
  "ResourceType" -> "Paclet", "ResourceCreateNotebook" -> True, 
@@ -13068,7 +13094,9 @@ GRPf1sw3cDj8VSOm/5G9w5vAHXKt3IZQ/0HDoQHBFwFFwBcEHxR9zQlGcP3o
           Scaled[1], Automatic}, StripOnInput -> False]& )}], 
    Cell[
     StyleData["AttachedMessage"], Deletable -> True, 
-    CellMargins -> {{60, 40}, {15, 5}}]}, Visible -> False, FrontEndVersion -> 
+    CellMargins -> {{60, 40}, {15, 5}}]}, WindowSize -> {573, 645}, 
+  WindowMargins -> {{665, Automatic}, {Automatic, 164}}, Visible -> False, 
+  FrontEndVersion -> 
   "13.2 for Microsoft Windows (64-bit) (November 18, 2022)", StyleDefinitions -> 
   "PrivateStylesheetFormatting.nb"],
 ExpressionUUID->"19815c2d-40b1-4444-ab91-65082907a383"

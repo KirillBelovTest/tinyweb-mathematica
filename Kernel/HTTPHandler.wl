@@ -11,19 +11,19 @@
 BeginPackage["JerryI`Tinyweb`HTTPHandler`", {"KirillBelov`Objects`", "JerryI`Tinyweb`TCPServer`"}]; 
 
 
-HTTPGetQ::usage = 
-"HTTPGetQ[message] checks that received message is via HTTP GET method"; 
-
-
-HTTPGetCompletedQ::usage = 
-"HTTPGetCompletedQ[message] check that message is completed"
-
-
 (* ::Section::Closed:: *)
 (*Names*)
 
 
 ClearAll["`*"];
+
+
+HTTPGetQ::usage = 
+"HTTPGetQ[packetDataString] checks that received message is via HTTP GET method"; 
+
+
+HTTPGetDataLength::usage = 
+"HTTPGetDataLength[packetDataString] full message length"
 
 
 (* ::Section::Closed:: *)
@@ -41,7 +41,7 @@ HTTPGetQ[message_String] :=
 StringContainsQ[message, "GET /"]
 
 
-HTTPGetCompletedQ[message_String] := 
+HTTPGetDataLength[message_String] := 
 <|
 	"ExpectedLength" -> StringLength[message]
 |>
