@@ -67,12 +67,12 @@ CreateType[TCPPacketBufferingServer, Object, Identity, {
 TCPPacketBufferingServer /: TCPPacketHandler[buffer_TCPPacketBufferingServer, packet_?AssociationQ] := 
 Module[{packetState, message, result}, 
 
-	Echo[packetState = checkPacket[buffer, packet], "packetState: "]; 
+	packetState = checkPacket[buffer, packet]; 
 
 	If[packetState["Completed"], 
-		Echo[message = mergeMessage[buffer, packet], "message: "]; 
+		message = mergeMessage[buffer, packet]; 
 		clearClientBuffer[buffer, packet]; 
-		Echo[result = invokeMessageHandler[buffer, message], "result: "]; 
+		result = invokeMessageHandler[buffer, message]; 
 		sendResponse[buffer, packet, result], 
 	(*Else*)
 		saveClientBuffer[buffer, Join[packet, packetState]]
