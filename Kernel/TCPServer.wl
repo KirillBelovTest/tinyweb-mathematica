@@ -23,7 +23,7 @@ TCPServer::usage =
 
 
 TCPPacketHandle::usage = 
-"TCPPacketHandle[server, packet] TCP server"; 
+"TCPPacketHandle[server, packet] packet handler"; 
 
 
 (* ::Section::Closed:: *)
@@ -46,8 +46,8 @@ Begin["`Private`"];
 
 
 CreateType[TCPServer, Object, Identity, {
-	"ClientStore" -> <||>, 
-	"CompleteChecker" -> <||>, 
+	"ClientBuffer" -> <||>, 
+	"CompleteHandler" -> <||>, 
 	"MessageHandler" -> <||>
 }]; 
 
@@ -69,18 +69,31 @@ CreateType[TCPServer, Object, Identity, {
 
 
 TCPServer /: TCPPacketHandle[server_TCPServer, packet_Association] := 
-Module[{packetState, client, message, result}, 
+Module[{packetCompletionState, packetExtended, client, message, result}, 
+
+	Print[DateString[], "\n"]; 
 
 	client = packet["SourceSocket"]; 
-	packetState = checkPacket[server, packet]; 
 
-	If[packetState["Completed"], 
+	packetCompletionState = checkCompletion[server, packet]; 
+
+	Print["Received: ", packetCompletionState["PacketLength"], " bytes\n"]; 
+
+	If[packetCompletionState["Completed"], 
+
 		message = mergeMessage[server, packet]; 
+
+		Print["Message: \n- - - - - - - - - - - -\n", message, "\n- - - - - - - - - - - -\n"]; 
+
 		clearClientBuffer[server, packet]; 
 		result = invokeMessageHandler[server, client, message]; 
+
+		Print["Response: \n- - - - - - - - - - - -\n", result, "\n- - - - - - - - - - - -\n"]; 
+
 		sendResponse[server, client, result], 
 	(*Else*)
-		saveClientBuffer[server, Join[packet, packetState]]
+		packetExtended = Join[packet, packetCompletionState]; 
+		saveClientBuffer[server, packetExtended]
 	]
 ]; 
 
@@ -89,40 +102,27 @@ Module[{packetState, client, message, result},
 (*Internal functions*)
 
 
-TCPServer /: checkPacket[buffer_TCPServer, packet_Association] := 
-Module[{
-	packetData, 
-	uuid, clientStore, 
+TCPServer /: checkCompletion[server_TCPServer, packet_Association] := 
+Module[{ 
+	uuid, clientBuffer, 
 	lastItem, packetLength, storedLength, expectedLength, 
-	completed, completeChecker, checkResult
+	completed, checkResult, packetDataString
 }, 
 	uuid = packet["SourceSocket"][[1]]; 
-	packetData = packet["DataByteArray"]; 
-	packetLength = Length[packetData]; 
+	packetDataString = ByteArrayToString[packet["DataByteArray"]]; 
+	packetLength = Length[packet["DataByteArray"]]; 
 
-	If[KeyExistsQ[buffer["ClientStore"], uuid] && buffer["ClientStore", uuid]["Length"] > 0, 
-		clientStore = buffer["ClientStore", client]; 
-		lastItem = clientStore["Part", -1]; 
+	If[KeyExistsQ[server["ClientBuffer"], uuid] && server["ClientBuffer", uuid]["Length"] > 0, 
+		clientBuffer = server["ClientBuffer", uuid]; 
+		lastItem = clientBuffer["Part", -1]; 
 		expectedLength = lastItem["ExpectedLength"]; 
 		storedLength = lastItem["StoredLength"]; , 
 	(*Else*)
-		completeChecker = SelectFirst[#[[1]][ByteArrayToString[packetData]]&] @ buffer["CompleteChecker"]; 
-		checkResult = completeChecker[[2]][ByteArrayToString[packetData]]; 
-		expectedLength = checkResult["ExpectedLength"]; 
+		expectedLength = conditionApply[server["CompleteHandler"]] @ packetDataString; 
 		storedLength = 0; 
 	]; 
 
 	completed = storedLength + packetLength >= expectedLength; 
-
-	(*Log*)
-	Print[DateString[]]; 
-	Print[StringTemplate["Received packet state: \n\tCompleted = `1`; \n\tPacketLength = `2`; \n\tStoredLength = `3`; \n\tExpectedLength = `4`"][
-		completed, 
-		packetLength, 
-		storedLength, 
-		expectedLength
-	]]; 
-	Print[]; 
 
 	(*Return*)
 	<|
@@ -134,51 +134,55 @@ Module[{
 ]
 
 
-TCPServer /: mergeMessage[buffer_TCPServer, packet_Association] := 
+TCPServer /: mergeMessage[server_TCPServer, packet_Association] := 
 Module[{uuid = packet["SourceSocket"][[1]]}, 
 	
-	(*Log*)
-	Print[DateString[]]; 
-	(Print[StringTemplate["Request: \n`1`"][#]]; Print[]; #)& @  
-
-	ByteArrayToString @ 
-	If[KeyExistsQ[buffer["ClientStore"], uuid], 
+	If[KeyExistsQ[server["ClientBuffer"], uuid], 
+		ByteArrayToString @ 
 		Apply[Join] @ 
 		Append[packet["DataByteArray"]] @ 
-		buffer["ClientStore", uuid]["Elements"], 
+		server["ClientBuffer", uuid]["Elements"][[All, "DataByteArray"]], 
 	(*Else*)
+		ByteArrayToString @ 
 		packet["DataByteArray"]
 	]
 ]
 
 
-TCPServer /: invokeMessageHandler[buffer_TCPServer, client_SocketObject, message_String] := 
-#[[2]][client, message]& @ SelectFirst[#[[1]][message]&] @ buffer["MessageHandler"]
+TCPServer /: invokeMessageHandler[server_TCPServer, client_SocketObject, message_String] := 
+Last[#][client, message]& @ SelectFirst[First[#][message]&] @ server["MessageHandler"]
 
 
-TCPServer /: sendResponse[buffer_TCPServer, client_SocketObject, result_String] := (
-	Print[DateString[]]; 
-	Print[StringTemplate["Response: \n`1`"][result]]; 
-	Print[]; 
-	WriteString[client, result]
-)
+TCPServer /: sendResponse[server_TCPServer, client_SocketObject, result_String] := 
+WriteString[client, result]
 
 
-TCPServer /: saveClientBuffer[buffer_TCPServer, packetExtended_Association] := 
-With[{uuid = packetExtended["SourceSocket"][[1]]}, 
-	If[KeyExistsQ[buffer["ClientStore"], uuid], 
-		buffer["ClientStore", uuid]["Append", packetExtended], 
-		buffer["ClientStore", uuid] = CreateDataStructure["DynamicArray", {packetExtended}]
+TCPServer /: saveClientBuffer[server_TCPServer, packetExtended_Association] := 
+With[{uuid = packetExtended["SourceSocket"][[1]], 
+	packetExtendedUpdated = Append[packetExtended, 
+		"StoredLength" -> packetExtended["StoredLength"] + packetExtended["PacketLength"]]
+}, 
+	If[KeyExistsQ[server["ClientBuffer"], uuid], 
+		server["ClientBuffer", uuid]["Append", packetExtendedUpdated], 
+		server["ClientBuffer", uuid] = CreateDataStructure["DynamicArray", {packetExtendedUpdated}]
 	]; 
 ]
 
 
-TCPServer /: clearClientBuffer[buffer_TCPServer, packet_Association] := 
+TCPServer /: clearClientBuffer[server_TCPServer, packet_Association] := 
 With[{uuid = packet["SourceSocket"][[1]]}, 
-	If[KeyExistsQ[buffer["ClientStore"], uuid], 
-		buffer["ClientStore", uuid]["DropAll"]
+	If[KeyExistsQ[server["ClientBuffer"], uuid], 
+		server["ClientBuffer", uuid]["DropAll"]
 	]; 
 ]
+
+
+(* ::Section::Closed:: *)
+(*Extension*)
+
+
+conditionApply[conditionAndFunctions: _Association | _List] := 
+Function[Last[SelectFirst[conditionAndFunctions, Function[cf, First[cf][##]]]][##]]
 
 
 (* ::Section::Closed:: *)

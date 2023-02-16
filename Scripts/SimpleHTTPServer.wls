@@ -12,18 +12,42 @@ createResponse[expr_] := okResponseTemplate[
 	ExportString[expr, "Text"]
 ];
 
+
+loadPageQ[parsed_?AssociationQ] := 
+parsed["Query", "Method"] == "GET" && 
+StringMatchQ[parsed["Query", "Path"], "/" ~~ __ ~~ {".html", ".wsp"}]
+
+
+loadPage[parsed_?AssociationQ] := 
+Import[FileNameJoin[Join[{Directory[]}, FileNameSplit[parsed["Query", "Path"]]]], "String"]
+
+
+evaluateQ[parsed_?AssociationQ] := 
+StringMatchQ[parsed["Query", "Path"], __ ~~ "?code=" ~~ __]
+
+
+evaluate[parsed_?AssociationQ] := 
+ToExpression[URLDecode[First[StringCases[parsed["Query", "Path"], Shortest[__ ~~ "?code="] ~~ code__ :> code]]]]
+
+
+handler = HTTPHandleMessage[<|
+	"LoadPage" -> loadPageQ -> createResponse @* loadPage, 
+	"Evaluate" -> evaluateQ -> createResponse @* evaluate, 
+	"Error" -> (True&) -> (createResponse["NOT FOUND"]&)
+|>]
+
+
 server = TCPServer[
-	"CompleteChecker" -> <|
-		"GET" -> HTTPGetQ -> HTTPGetDataLength, 
-		"ERR" -> (True &) -> (<|"ExpectedLength" -> 0|> &)
+	"CompleteHandler" -> <|
+		"GET" -> HTTPGetQ -> HTTPGetExpectedLength, 
+		"POST" -> HTTPPostQ -> HTTPPostExpectedLength
 	|>, 
 	"MessageHandler" -> <|
-		"GET" -> HTTPGetQ -> (createResponse["Hello!"] &), 
-    	"ERR" -> (True &) -> ("ERROR" &)
+		"HTTP" -> HTTPQ -> ((HTTPParse[#2]; handler[#2])&)
 	|>
 ]
 
 SocketListen[8000, server @* TCPPacketHandle]
 
 
-While[True, Pause[0.1]]
+While[True, Pause[0.01]]
