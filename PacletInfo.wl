@@ -15,8 +15,12 @@ PacletObject[
         "Root" -> "Kernel",
         "Context" -> {
           {"JerryI`Tinyweb`", "Init.wl"}, 
+          {"JerryI`Tinyweb`Internal`", "Internal.wl"}, 
           {"JerryI`Tinyweb`TCPServer`", "TCPServer.wl"}, 
-          {"JerryI`Tinyweb`HTTPHandler`", "HTTPHandler.wl"}
+          {"JerryI`Tinyweb`HTTPHandler`", "HTTPHandler.wl"}, 
+          {"JerryI`Tinyweb`WSHandler`", "WSHandler.wl"}, 
+          {"JerryI`Tinyweb`LTPHandler`", "LTPHandler.wl"}, 
+          {"JerryI`Tinyweb`WSP`", "WSP.wl"}
         }
       },
       {"Documentation", "Language" -> "English"},

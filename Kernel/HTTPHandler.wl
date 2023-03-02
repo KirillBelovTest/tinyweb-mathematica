@@ -4,46 +4,47 @@
 (*HTTP Handler*)
 
 
+(*+-------------------------------------------------+
+  |                 HTTP HANDLER                    |
+  |                                                 |
+  |               (reseive message)                 |
+  |                       |                         |
+  |            [parse message to assoc]             |
+  |                       |                         |
+  |               <select pipeline>                 |
+  |      /       /        |        \         \      |
+  |     ..   [get..]  [post..]  [delete..]   ..     |
+  |              \        |        /                |
+  |           [create string response]              |
+  |                       |                         |
+  |                {return to tcp}                  |  
+  +-------------------------------------------------+*)
+
+
 (* ::Section::Closed:: *)
 (*Begin packge*)
 
 
-BeginPackage["JerryI`Tinyweb`HTTPHandler`", {"KirillBelov`Objects`"}]; 
+BeginPackage["JerryI`Tinyweb`HTTPHandler`", {"JerryI`Tinyweb`Internal`", "KirillBelov`Objects`"}]; 
 
 
 (* ::Section::Closed:: *)
 (*Names*)
 
 
-ClearAll["`*"];
+ClearAll["`*"]
 
 
 HTTPQ::usage = 
-"HTTPQ[packetDataString] POST or GET"
+"HTTPQ[client, message] check that message was sent via HTTP protocol"; 
 
 
-HTTPGetQ::usage = 
-"HTTPGetQ[packetDataString] checks that received message is via HTTP GET method"; 
+HTTPLength::usage = 
+"HTTPLength[client, message] returns expected message length"; 
 
 
-HTTPGetExpectedLength::usage = 
-"HTTPGetExpectedLength[packetDataString] full message length"
-
-
-HTTPPostQ::usage = 
-"HTTPPostQ[packetDataString] checks that received message is via HTTP POST method"; 
-
-
-HTTPPostExpectedLength::usage = 
-"HTTPPostExpectedLength[packetDataString] full message length"
-
-
-HTTPParse::usage = 
-"HTTPParse[message] parse message to assoc"
-
-
-HTTPHandleMessage::usage = 
-"HTTPHandleMessage[assoc][message]"
+HTTPHandler::usage = 
+"HTTPHandler[opts] mutable type for the handling HTTP messages"; 
 
 
 (* ::Section::Closed:: *)
@@ -54,84 +55,128 @@ Begin["`Private`"];
 
 
 (* ::Section::Closed:: *)
-(*Check HTTP GET Request*)
-
-
-HTTPGetQ[message_String] := 
-StringContainsQ[message, "GET "]
-
-
-HTTPGetExpectedLength[message_String] := 
-StringLength[message]
-
-
-(* ::Section::Closed:: *)
-(*Check HTTP POST Request*)
-
-
-HTTPPostQ[message_String] := 
-StringContainsQ[message, "POST "]
-
-
-HTTPPostExpectedLength[message_String] := 
-4 + StringLength[StringExtract[message, "\r\n\r\n" -> 1]] + 
-ToExpression[StringExtract[message, "content-length: " -> 2, "\r\n"  -> 1]]
-
-
-(* ::Section::Closed:: *)
-(*Parametrized Handler*)
-
-
-HTTPHandleMessage[assoc_?AssociationQ][message_String] := 
-conditionApply[assoc] @ HTTPParse[message]
-
-
-(* ::Section::Closed:: *)
 (*HTTPQ*)
 
 
-HTTPQ[message_String] := 
-HTTPGetQ[message] || HTTPPostQ[message]
+HTTPQ[client_SocketObject, message_ByteArray] := 
+Module[{messageHeader, result}, 
+	messageString = ByteArrayToString[message]; 
+	messageStringHeader = StringExtract[messageString, "\r\n\r\n" -> 1]; 
+	
+	result = And[
+		StringContainsQ[messageString, "\r\n\r\n"], 
+		StringContainsQ[messageStringHeader, StartOfString ~~ $httpMethods], 
+		Or[
+			StringContainsQ[messageStringHeader, StartOfLine ~~ "Connection: keep-alive", IgnoreCase -> True], 
+			StringContainsQ[messageStringHeader, StartOfLine ~~ "Connection: close", IgnoreCase -> True]
+		]
+	]; 
+
+	If[result, Print["[PROTOCOL]: HTTP"]]; 
+
+	(*Return: True | False*)
+	result
+]; 
 
 
 (* ::Section::Closed:: *)
-(*Parser*)
+(*HTTPLength*)
 
 
-HTTPParse[message_String] := 
-Module[{query, headers, body}, 
-	query = StringCases[
-		StringExtract[message, "\r\n" -> 1], 
-		method__ ~~ " " ~~ path__ ~~ " " ~~ version__ :> <|"Method" -> method, "Path" -> path, "Version" -> version|>, 
-		IgnoreCase -> True
-	][[1]]; 
+HTTPLength[client_SocketObject, message_ByteArray] := 
+Module[{messageString}, 
+	messageString = ByteArrayToString[message]; 
 
-	headers = Association[
-		Map[Rule[#1, StringJoin[##2]]& @@ Map[StringTrim]@StringSplit[#, ":"] &]@
-  		StringExtract[message, "\r\n\r\n" -> 1, "\r\n" -> 2 ;; ]
-	]; 
+	(*Return: _Integer*)
+	Which[
+		StringContainsQ[messageString, "Content-Length: ", IgnoreCase -> True], 
+			ToExpression[StringExtract[messageString, {"Content-Length: ", "content-length: "} -> 2, "\r\n" -> 1]], 
+		True, 
+			Length[message]
+	]
+]; 
 
-	body = StringJoin[StringExtract[message, "\r\n\r\n" -> 2 ;; ]]; 
 
-	(*Return*)
-	parsed =  <|
-		"Query" -> query, 
-		"Headers" -> headers, 
-		"Body" -> body
-	|>; 
+(* ::Section::Closed:: *)
+(*HTTPHandler*)
 
-	Print["Parsed request: \n", ToString[parsed], "\n"]; 
 
-	parsed
+CreateType[HTTPHandler, {"Pipeline" -> <||>}]; 
+
+
+handler_HTTPHandler[client_SocketObject, message_ByteArray] := 
+Module[{messageAssoc, pipeline, result}, 
+	messageAssoc = parseRequest[message]; 
+	pipeline = handler["Pipeline"]; 
+
+	(*Result: _String | _Association?responseQ*)
+	result = ConditionApply[pipeline][messageAssoc]; 
+
+	(*Return: _String*)
+	createResponse[result]
 ]
 
 
-(* ::Section::Closed::*)
+(* ::Section::Closed:: *)
 (*Internal*)
 
 
-conditionApply[conditionAndFunctions: _Association | _List] := 
-Function[Last[SelectFirst[conditionAndFunctions, Function[cf, First[cf][##]]]][##]]
+$httpMethods = {"GET", "PUT", "DELETE", "HEAD", "POST", "CONNECT", "OPTIONS", "TRACE", "PATCH"}; 
+
+
+parseRequest[message_ByteArray] := 
+Module[{messageString, httpHeader, headers, body}, 
+	messageString = ByteArrayToString[message]; 
+	
+	httpHeader = First @ StringCases[
+		StringExtract[messageString, "\r\n" -> 1], 
+		method__ ~~ " " ~~ url__ ~~ " " ~~ version__ :> <|"Method" -> method, "URL" -> <|URLParse[url]|>, "Version" -> version|>, 
+		IgnoreCase -> True
+	]; 
+
+	headers = Association[
+		Map[Rule[#1, StringRiffle[{##2}, ":"]]& @@ Map[StringTrim]@StringSplit[#, ":"] &]@
+  		StringExtract[messageString, "\r\n\r\n" -> 1, "\r\n" -> 2 ;; ]
+	]; 
+
+	body = StringRiffle[StringExtract[messageString, "\r\n\r\n" -> 2 ;; ], "\r\n\r\n"]; 
+
+	(*Return: _Association?requestQ*)
+	<|
+		"HTTPHeader" -> httpHeader, 
+		"Headers" -> headers, 
+		"Body" -> body
+	|>
+]; 
+
+
+createResponse[body_String] := 
+createResponse[<|
+	"Code" -> 200, 
+	"Body" -> body
+|>]
+
+
+createResponse[response_Association?responseQ] := 
+Module[{assoc = response}, 
+	If[Not[KeyExistsQ[assoc, "Message"]], assoc["Message"] = "OK"]; 
+	If[Not[KeyExistsQ[assoc, "Headers"]], assoc["Headers"] = <|
+		"Content-Length" -> StringLength[assoc["Body"]]
+	|>]; 
+
+	(*Return: _String*)
+	StringTemplate["HTTP/1.1 `Code` `Message`\r\n"][assoc] <> 
+	StringRiffle[KeyValueMap[StringRiffle[{#1, #2}, ": "]&] @ assoc["Headers"], "\r\n"] <> 
+	"\r\n\r\n" <> 
+	assoc["Body"]
+]
+
+
+responseQ[assoc_Association] := 
+And[
+	KeyExistsQ[assoc, "Code"], 
+	KeyExistsQ[assoc, "Body"]
+]
 
 
 (* ::Section::Closed:: *)
@@ -142,7 +187,7 @@ End[];
 
 
 (* ::Section::Closed:: *)
-(*End packe*)
+(*End packet*)
 
 
 EndPackage[]; 

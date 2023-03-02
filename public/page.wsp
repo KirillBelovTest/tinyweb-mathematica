@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WSP Demo</title>
+    </head>
+    <body>
+        <h1>
+            HW from <?wsp $Username ?>. <a href="/public/index.html">Link to Index</a>
+        </h1>
+        <div>
+            <?wsp Plot[{Sin[x], Cos[x]}, {x, 1, 7}, PlotTheme -> "Web"] ?>
+        </div>
+    </body>
+</html>
