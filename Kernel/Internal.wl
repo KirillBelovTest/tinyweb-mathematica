@@ -1,26 +1,28 @@
-BeginPackage["JerryI`Tinyweb`Internal`"]
+(*:Package:*)
+
+BeginPackage["JerryI`Tinyweb`Internal`"];
 
 
-ClearAll["`*"]
+ClearAll["`*"];
 
 
 ConditionApply::usage = 
-"ConditionApply[assoc][args] select rule if key[args] is True and resturn value[args]"
+"ConditionApply[assoc][args] select rule if key[args] is True and resturn value[args]";
 
 
 Cache::usage = 
 "Cache[expr] cache expr for one minute
-Cache[expr, period] cache expr for specific period"
+Cache[expr, period] cache expr for specific period";
 
 
-Begin["`Private`"]
+Begin["`Private`"];
 
 
 ConditionApply[conditionAndFunctions: _Association | _List] := 
-Function[Last[SelectFirst[conditionAndFunctions, Function[cf, First[cf][##]]]][##]]
+Function[Last[SelectFirst[conditionAndFunctions, Function[cf, First[cf][##]]]][##]];
 
 
-SetAttributes[Cache, HoldFirst]
+SetAttributes[Cache, HoldFirst];
 
 
 Cache[expr_, period_Integer: 60] := 
@@ -31,10 +33,10 @@ Module[{roundNow = Floor[AbsoluteTime[], period]},
 		Cache[expr, "Date"] = roundNow; 
 		Cache[expr, "Value"] = expr
 	]
-]
+];
 
 
-End[]
+End[];
 
 
-EndPackage[]
+EndPackage[];

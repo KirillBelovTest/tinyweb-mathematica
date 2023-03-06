@@ -55,6 +55,10 @@ WSHandler::usage =
 "WSHandler[opts] handle messages received via WS protocol"
 
 
+WSSender::usage = 
+"WSSender"
+
+
 (*::Section::Close::*)
 (*Begin private*)
 
@@ -81,13 +85,17 @@ If[frameQ[client, message],
 
 CreateType[WSHandler, {
 	"Pipeline" -> <||>, 
+
+	(*Input: <|.., "Data" -> _ByteArray|>*)
 	"Deserializer" -> Identity, 
+
+	(*Return: _ByteArray*)
 	"Serializer" -> Identity
 }]; 
 
 
 handler_WSHandler[client_SocketObject, message_ByteArray] := 
-Module[{deserialize, serialize, frame, data, result}, 
+Module[{deserialize, serialize, frame, data, result, sender}, 
 	deserialize = handler["Deserializer"]; 
 	serialize = handler["Serializer"]; 
 	
@@ -102,7 +110,7 @@ Module[{deserialize, serialize, frame, data, result},
 			frame = decodeFrame[message]; 
 			data = deserialize[frame]; 
 			result = ConditionApply[handler["Pipeline"]][client, data]; 
-			If[result != Null, serialize[result], Null], 
+			If[result != Null, encodeFrame[serialize[result]], Null], 
 
 		(*Return: _String*)
 		handshakeQ[client, message], 
@@ -163,6 +171,11 @@ Module[{messageString, key, acceptKey},
 ]; 
 
 
+createAcceptKey[key_String] := 
+(*Return: _String*)
+BaseEncode[Hash[key <> $guid, "SHA1", "ByteArray"], "Base64"]; 
+
+
 getFrameLength[client_SocketObject, message_ByteArray] := 
 Module[{len}, 
 	len = FromDigits[IntegerDigits[message[[2]], 2, 8][[2 ;; ]], 2]; 
@@ -177,20 +190,43 @@ Module[{len},
 ]; 
 
 
+encodeFrame[message_ByteArray] := 
+Module[{byte1, fin, opcode, length, mask, lengthBytes}, 
+	fin = 1; 
+	
+	opcode = 2; 
+	
+	byte1 = Prepend[IntegerDigits[opcode, 2, 7], fin]; 
+
+	length = Length[message]; 
+
+	Which[
+		length < 126, 
+			lengthBytes = ByteArray[{length}], 
+		126 <= length < 2^16, 
+			lengthBytes = ByteArray[Join[{126}, IntegerDigits[length, 256, 2]]], 
+		2^16 <= length < 2^64, 
+			lengthBytes = ByteArray[Join[{127}, IntegerDigits[length, 256, 8]]]
+	]; 
+
+	(*Return: _ByteArray*)
+	Join[byte1, lengthBytes, message]
+]
+
+
+encodeFrame[message_String] := 
+encodeFrame[StringToByteArray[message]]
+
+
 decodeFrame[message_ByteArray] := 
 Module[{header, payload, data},
 	header = getFrameHeader[message]; 
-	payload = Normal[message[[header["PayloadPosition"]]]]; 
-	data = ByteArray[unmask[header["MaskingKey"], payload]]; 
+	payload = message[[header["PayloadPosition"]]]; 
+	data = If[Length[header["MaskingKey"]] == 4, ByteArray[unmask[header["MaskingKey"], payload]], payload]; 
 
 	(*Return: _Association*)
 	Append[header, "Data" -> data]
 ]; 
-
-
-createAcceptKey[key_String] := 
-(*Return: _String*)
-BaseEncode[Hash[key <> $guid, "SHA1", "ByteArray"], "Base64"]; 
 
 
 getFrameHeader[message_ByteArray] := 
@@ -218,7 +254,7 @@ Module[{byte1, byte2, fin, opcode, mask, len, maskingKey, nextPosition, payload,
 	]; 
 
 	If[mask, 
-		maskingKey = Normal[message[[nextPosition ;; nextPosition + 4]]]; nextPosition = nextPosition + 4, 
+		maskingKey = message[[nextPosition ;; nextPosition + 4]]; nextPosition = nextPosition + 4, 
 		maskingKey = {}
 	]; 
 
@@ -234,18 +270,13 @@ Module[{byte1, byte2, fin, opcode, mask, len, maskingKey, nextPosition, payload,
 ]; 
 
 
-unmask := unmask = 
-Compile[{{maskingKey, _Integer, 1}, {payload, _Integer, 1}}, 
-	Module[{result = payload}, 
-		If[Length[maskingKey] > 0, 
-			Table[
-				result[[i]] = BitXor[payload[[i]], maskingKey[[Mod[i - 1, 4] + 1]]], 
-				{i, 1, Length[payload]}
-			]
-		]; 
-
-		(*Return: {__Integer}*)
-		result
+unmask := unmask = FunctionCompile[
+	Function[{
+		Typed[maskingKey, "NumericArray"::["MachineInteger", 1]], 
+		Typed[payload, "NumericArray"::["MachineInteger", 1]]
+	}, 
+		(*Return: PacketArray::[MachineInteger, 1]*)
+		Table[BitXor[payload[[i]], maskingKey[[Mod[i - 1, 4] + 1]]], {i, 1, Length[payload]}]
 	]
 ]
 
