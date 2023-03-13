@@ -1,4 +1,4 @@
-BeginPackage["JerryI`Tinyweb`LTPHandler`"]
+BeginPackage["JerryI`Tinyweb`LTP`"]
 
 
 LTPQ::usage = 
@@ -29,6 +29,7 @@ Module[{data, header},
 	data = BinarySerialize[ReleaseHold[BinaryDeserialize[message[[8 ;; ]]]]]; 
 	Join[StringToByteArray["LTP"], ByteArray[IntegerDigits[Length[data], 256, 4]], data]
 ]
+
 
 End[]
 

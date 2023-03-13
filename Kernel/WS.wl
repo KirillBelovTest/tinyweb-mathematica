@@ -33,7 +33,7 @@
 (*Begin package*)
 
 
-BeginPackage["JerryI`Tinyweb`WSHandler`", {"JerryI`Tinyweb`Internal`", "KirillBelov`Objects`"}]; 
+BeginPackage["JerryI`Tinyweb`WS`", {"JerryI`Tinyweb`Internal`", "KirillBelov`Objects`"}]; 
 
 
 (*::Section::Close::*)
@@ -69,7 +69,7 @@ Begin["`Private`"];
 WSQ[client_SocketObject, message_ByteArray] := 
 Module[{result}, 
 	result = frameQ[client, message] || handshakeQ[client, message]; 
-	If[result, Print["[PROTOCOL]: WS"]]; 
+	If[result, Print["[WS] Selected protocol"]]; 
 
 	(*Return*)
 	result

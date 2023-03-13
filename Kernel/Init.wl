@@ -1,7 +1,7 @@
 (* ::Package:: *)
 
-Get["JerryI`Tinyweb`TCPServer`"]
-Get["JerryI`Tinyweb`HTTPHandler`"]
-Get["JerryI`Tinyweb`WSHandler`"]
-Get["JerryI`Tinyweb`LTPHandler`"]
+Get["JerryI`Tinyweb`TCP`"]
+Get["JerryI`Tinyweb`HTTP`"]
+Get["JerryI`Tinyweb`WS`"]
+Get["JerryI`Tinyweb`LTP`"]
 Get["JerryI`Tinyweb`WSP`"]

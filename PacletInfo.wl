@@ -16,10 +16,10 @@ PacletObject[
         "Context" -> {
           {"JerryI`Tinyweb`", "Init.wl"}, 
           {"JerryI`Tinyweb`Internal`", "Internal.wl"}, 
-          {"JerryI`Tinyweb`TCPServer`", "TCPServer.wl"}, 
-          {"JerryI`Tinyweb`HTTPHandler`", "HTTPHandler.wl"}, 
-          {"JerryI`Tinyweb`WSHandler`", "WSHandler.wl"}, 
-          {"JerryI`Tinyweb`LTPHandler`", "LTPHandler.wl"}, 
+          {"JerryI`Tinyweb`TCP`", "TCP.wl"}, 
+          {"JerryI`Tinyweb`HTTP`", "HTTP.wl"}, 
+          {"JerryI`Tinyweb`WS`", "WS.wl"}, 
+          {"JerryI`Tinyweb`LTP`", "LTP.wl"}, 
           {"JerryI`Tinyweb`WSP`", "WSP.wl"}
         }
       },

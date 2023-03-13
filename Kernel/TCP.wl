@@ -29,7 +29,7 @@
 (*Begin package*)
 
 
-BeginPackage["JerryI`Tinyweb`TCPServer`", {"JerryI`Tinyweb`Internal`", "KirillBelov`Objects`"}]; 
+BeginPackage["JerryI`Tinyweb`TCP`", {"JerryI`Tinyweb`Internal`", "KirillBelov`Objects`"}]; 
 
 
 (* ::Section::Closed:: *)
@@ -70,7 +70,7 @@ Module[{client, extendedPacket, message, result},
 		clearBuffler[server, client], 
 	(*Else*)
 		savePacketToBuffer[server, client, extendedPacket]
-	]
+	]; 
 ]; 
 
 
@@ -84,7 +84,7 @@ Module[{data, dataLength, buffer, last, expectedLength, storedLength, completed}
 	data = packet["DataByteArray"]; 
 	dataLength = Length[data]; 
 
-	Print["[RECEIVED]: ", dataLength, " bytes"]; 
+	Print["[TCP] Received: ", dataLength, " bytes"]; 
 
 	If[KeyExistsQ[server["Buffer"], uuid] && server["Buffer", uuid]["Length"] > 0, 
 		buffer = server["Buffer", uuid]; 
@@ -98,9 +98,9 @@ Module[{data, dataLength, buffer, last, expectedLength, storedLength, completed}
 
 	completed = storedLength + dataLength >= expectedLength; 
 
-	Print["[STORED]: ", storedLength, " bytes"]; 
-	Print["[EXPECT]: ", expectedLength, " bytes"]; 
-	Print["[COMPLETED]: ", completed]; 
+	Print["[TCP] Stored: ", storedLength, " bytes"]; 
+	Print["[TCP] Expect: ", expectedLength, " bytes"]; 
+	Print["[TCP] Complete: ", completed]; 
 
 
 	(*Return*)
@@ -129,15 +129,16 @@ ConditionApply[server["MessageHandler"]][client, message]
 
 TCPServer /: sendResponse[server_TCPServer, client_SocketObject, result: _String | _ByteArray | Null] := (
 	Switch[result, 
-		_String, Print["[SENT]: ", StringLength[result], " bytes"]; WriteString[client, result], 
-		_ByteArray, Print["[SENT]: ", Length[result], " bytes"]; BinaryWrite[client, result], 
-		Null, Print["[NOT SENT]"]
+		_String, Print["[TCP] Sent: ", StringLength[result], " bytes"]; WriteString[client, result], 
+		_ByteArray, Print["[TCP] Sent: ", Length[result], " bytes"]; BinaryWrite[client, result], 
+		Null, Print["[TCP] Not sent"]
 	]
 ); 
 
 
 TCPServer /: savePacketToBuffer[server_TCPServer, SocketObject[uuid_String], extendedPacket_Association] := 
 If[KeyExistsQ[server["Buffer"], uuid], 
+	Print["[TCP] Buffering: ", extendedPacket["DataLength"], "bytes"]; 
 	server["Buffer", uuid]["Append", extendedPacket], 
 	server["Buffer", uuid] = CreateDataStructure["DynamicArray", {extendedPacket}]
 ]; 
