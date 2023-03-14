@@ -23,10 +23,10 @@ ByteArraySplit::usage =
 "ByteArraySplit[data, sep -> n] works like Map[StringJoin, TakeDrop[StringSplit[text, sep], n]]"; 
 
 
-AssociationMatchQ::usage = 
-"AssociationMatchQ[assoc, pattern] match assoc with pattern
-AssociationMatchQ[assoc, key, valuePattern] check key from assoc
-AssociationMatchQ[pattern] - function"; 
+AssocMatchQ::usage = 
+"AssocMatchQ[assoc, pattern] match assoc with pattern
+AssocMatchQ[assoc, key, valuePattern] check key from assoc
+AssocMatchQ[pattern] - function"; 
 
 
 Begin["`Private`"];
@@ -65,19 +65,19 @@ Module[{position},
 ]; 
 
 
-AssociationMatchQ[assoc_Association, pattern_Association] := 
-Apply[And, KeyValueMap[AssociationMatchQ[assoc, #1, #2]&, pattern]]
+AssocMatchQ[assoc_Association, pattern_Association] := 
+Apply[And, KeyValueMap[AssocMatchQ[assoc, #1, #2]&, pattern]]
 
 
-AssociationMatchQ[pattern_Association] := 
-Function[assoc, AssociationMatchQ[assoc, pattern]]
+AssocMatchQ[pattern_Association] := 
+Function[assoc, AssocMatchQ[assoc, pattern]]
 
 
-AssociationMatchQ[request_Association, key__String, test: _String | _StringExpression] := 
+AssocMatchQ[request_Association, key__String, test: _String | _StringExpression] := 
 StringMatchQ[request[key], test, IgnoreCase -> True]
 
 
-AssociationMatchQ[request_Association, key: _String | {__String}, test: _Function | _Symbol] := 
+AssocMatchQ[request_Association, key: _String | {__String}, test: _Function | _Symbol] := 
 test[request[key]]
 
 

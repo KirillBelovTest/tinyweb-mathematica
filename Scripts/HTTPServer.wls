@@ -12,9 +12,9 @@ Import[FileNameJoin[Flatten[{Directory[], FileNameSplit[path]}]], "String"]
 
 http = HTTPHandler[
 	"Pipeline" -> <|
-		"HTML" -> AssociationMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".html"|>] -> Function[importUrlPath[#Path]], 
-		"WSP" -> AssociationMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".wsp"|>] -> Function[importUrlPath[#Path]], 
-		"IMG" -> AssociationMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ {".png", ".jpg"}|>] -> Function[importUrlPath[#Path]], 
+		"HTML" -> AssocMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".html"|>] -> Function[importUrlPath[#Path]], 
+		"WSP" -> AssocMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".wsp"|>] -> Function[importUrlPath[#Path]], 
+		"IMG" -> AssocMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ {".png", ".jpg"}|>] -> Function[importUrlPath[#Path]], 
 
 		(*Pipeline with signature*)
 		"Not found" -> Function[assoc, True] -> Function[assoc, <|"Code" -> 404, "Body" -> "Not found"|>]

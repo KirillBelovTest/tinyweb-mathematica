@@ -96,7 +96,7 @@ Module[{data, dataLength, buffer, last, expectedLength, storedLength, completed}
 
 	completed = storedLength + dataLength >= expectedLength; 
 
-	(*Return*)
+	(*Return: _Association*)
 	Join[packet, <|
 		"Completed" -> completed, 
 		"ExpectedLength" -> expectedLength, 
