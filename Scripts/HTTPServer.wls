@@ -6,18 +6,35 @@ PacletDirectoryLoad[Directory[]];
 Get["JerryI`Tinyweb`"]; 
 
 
-importUrlPath[path_String] := 
-Import[FileNameJoin[Flatten[{Directory[], FileNameSplit[path]}]], "String"]
+evaluateRequestCode[request_Association] := 
+serializeCodeResponse[ToExpression[request["Query", "code"]]]
+
+
+serializeCodeResponse[image_Graphics] := 
+ExportString[image, "PNG"]
+
+
+serializeCodeResponse[expr_] := 
+ExportString[expr, "String"]
+
+
+pathExistsQ[path_String] := 
+FileExistsQ[FileNameJoin[{Directory[], FileNameSplit[path]}]] && 
+Not[DirectoryQ[FileNameJoin[{Directory[], FileNameSplit[path]}]]]
+
+
+importFile[request_Association] := 
+ImportString[FileNameJoin[{Directory[], FileNameSplit[request["Path"]]}], "String"]
 
 
 http = HTTPHandler[
 	"Pipeline" -> <|
-		"HTML" -> AssocMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".html"|>] -> Function[importUrlPath[#Path]], 
-		"WSP" -> AssocMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".wsp"|>] -> Function[importUrlPath[#Path]], 
-		"IMG" -> AssocMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ {".png", ".jpg"}|>] -> Function[importUrlPath[#Path]], 
+		"Code" -> AssocMatchQ[<|"Method" -> "GET", "Query" -> KeyExistsQ["code"]|>] -> evaluateRequestCode, 
+		"File" -> AssocMatchQ[<|"Method" -> "GET", "Path" -> pathExistsQ|>] -> importFile, 
+		"ListPlot" -> AssocMatchQ[<|"Method" -> "POST", "Query" -> <|"code" -> "ListPlot"|>|>] -> Function[ExportString[ListPlot[ImportByteArray[#Body, "Table"]], "PNG"]], 
 
-		(*Pipeline with signature*)
-		"Not found" -> Function[assoc, True] -> Function[assoc, <|"Code" -> 404, "Body" -> "Not found"|>]
+		(*Pipeline with signature example*)
+		"NotFound" -> Function[assoc, True] -> Function[assoc, <|"Code" -> 404, "Body" -> "Not found"|>]
 	|>
 ]
 
@@ -32,7 +49,7 @@ tcp = TCPServer[
 ]
 
 
-SocketListen[8080, Function[tcp[#]]]
+PrintReturn[SocketListen[8080, Function[tcp[#]]], "STARTING TCP SERVER", "Server listening on port `1`", 8080&]
 
 
 While[True, Pause[0.001]]

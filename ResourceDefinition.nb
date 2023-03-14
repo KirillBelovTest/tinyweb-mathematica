@@ -32,7 +32,7 @@ Cell[CellGroupData[{
 Cell["", "FileManagerTopSpacer",
  CellGroupingRules->{"SectionGrouping", 99},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->266988247,ExpressionUUID->"2f88f892-ab7b-4be9-bcf5-fb08b5d5fb4a"],
+ CellID->266988247,ExpressionUUID->"1d156e12-a1d5-471a-a75a-85488743e484"],
 
 Cell[CellGroupData[{
 
@@ -60,7 +60,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "docs"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"b057f10e-0fee-492a-8cac-7b9d0eaae689"]], \
+   "Text"}]],ExpressionUUID->"987d2efc-9d81-471a-b892-898d81ac6a5a"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -70,7 +70,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->23473841,ExpressionUUID->"19f1d0b8-8241-409e-8a67-abb9bb24b73c"],
+ CellID->23473841,ExpressionUUID->"1d7593ca-accc-4d28-83df-6217180b7cc4"],
 
 Cell[CellGroupData[{
 
@@ -98,7 +98,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "docs", "docs"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"ac9c433e-fd74-48fe-8731-aae658d151d3"]], \
+   "Text"}]],ExpressionUUID->"2d29617e-01bb-41b4-aabd-be45c9c4adb5"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
@@ -108,7 +108,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->7900058,ExpressionUUID->"ec5ec8ca-5fa6-4911-a38b-959ba09f8c43"],
+ CellID->7900058,ExpressionUUID->"3178d1be-3cd6-4147-acb2-b5ca2a157363"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -131,7 +131,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->16225532,ExpressionUUID->"3aa48b39-5a81-409c-acef-cf12c50485a7"],
+ CellID->16225532,ExpressionUUID->"2a385784-5e1b-4448-8a7e-9aad01e26021"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -154,7 +154,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->256384223,ExpressionUUID->"2c73ee90-1435-4d9f-9d5f-d176ff4ef399"],
+ CellID->256384223,ExpressionUUID->"391af9c7-7c26-4c22-8495-9d10314154eb"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -177,7 +177,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->246583396,ExpressionUUID->"d554f6e4-c396-4d1e-9ed8-7cd1616bd46e"],
+ CellID->246583396,ExpressionUUID->"178a4f34-28e4-496f-b77b-6bd6171d7b8c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -200,7 +200,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->220426468,ExpressionUUID->"70f345d5-e74c-4f9e-88b7-eab989e820f5"],
+ CellID->220426468,ExpressionUUID->"ba506d47-cc87-4fd1-94bb-56f89bb0fd3c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -223,7 +223,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->423574594,ExpressionUUID->"08a63bdb-efb8-4bae-95e0-7821d252bc29"],
+ CellID->423574594,ExpressionUUID->"62ef6552-67fc-4809-8bbe-9a889d359b5d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -246,7 +246,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->158035514,ExpressionUUID->"f19fff1b-57f7-4a4c-8e4e-f7e52bf1629e"],
+ CellID->158035514,ExpressionUUID->"cef22bed-f46e-4b7e-affa-0f9e94cfecac"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -269,7 +269,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->718790720,ExpressionUUID->"9920d041-325c-4f36-9fa0-1467a46b114c"],
+ CellID->718790720,ExpressionUUID->"3c5be140-a49c-4370-ac52-a467ee4b76b3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -292,7 +292,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->181705786,ExpressionUUID->"6f7c4e43-0a8f-47aa-a13f-9d8069418003"],
+ CellID->181705786,ExpressionUUID->"defaf1b0-b3a9-45d2-91cb-15dadb39c902"],
 
 Cell[CellGroupData[{
 
@@ -321,7 +321,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "docs", "docs", "tutorial"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"f95ae20d-2d31-4eb2-9914-0962f4b59a21"]], \
+   "Text"}]],ExpressionUUID->"9d8c79df-9111-46d3-8412-5f76d3ccd0b4"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -331,7 +331,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->74673999,ExpressionUUID->"7a8b7adc-3228-42b4-9df1-b3833559f2b7"],
+ CellID->74673999,ExpressionUUID->"24366607-04ab-40b2-b203-9777c03bb9d5"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -354,7 +354,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->149031381,ExpressionUUID->"ccf8beca-d9ab-4b68-b1d7-0e513f36c633"],
+ CellID->149031381,ExpressionUUID->"9b1762ae-0c79-4b58-88ba-4134e071a5da"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -377,7 +377,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->37356646,ExpressionUUID->"c0b7d85a-3e1f-4991-bb3d-67ee80fb79d6"],
+ CellID->37356646,ExpressionUUID->"916c8136-bdd7-4deb-9c75-766679409c0c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -400,7 +400,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->297651544,ExpressionUUID->"efb1848a-4e13-4bac-b12f-569382469621"],
+ CellID->297651544,ExpressionUUID->"bf094b5b-e004-4939-ac0a-7e5ba84d852c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -423,7 +423,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->728578727,ExpressionUUID->"8eb98115-fddd-4c7b-a752-a8f6687950fb"],
+ CellID->728578727,ExpressionUUID->"771c1891-5fc1-408d-850a-eb809491beb3"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -446,7 +446,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->15748949,ExpressionUUID->"e629e3a3-224d-4765-a8f2-c74ffeba2f7e"],
+ CellID->15748949,ExpressionUUID->"ab21d39c-d776-4995-ae2d-1098535e4a17"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -469,7 +469,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->421094937,ExpressionUUID->"84452a8f-d391-4290-aac1-f5d39555dea8"],
+ CellID->421094937,ExpressionUUID->"cc251ee0-7d47-4ebe-8eda-4b5795d6a4da"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -492,7 +492,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->55192636,ExpressionUUID->"927cd18d-b47d-4944-993a-228877fa3431"],
+ CellID->55192636,ExpressionUUID->"cb33be88-e3d5-4fd9-8c22-3cb4b0b88b5d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -515,7 +515,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->544277423,ExpressionUUID->"1ac83c9b-3885-42f9-92e8-60b906ba34dd"],
+ CellID->544277423,ExpressionUUID->"a43e75d7-3ad8-44c4-bca1-07fb8717b04d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -538,7 +538,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->460110590,ExpressionUUID->"0853d488-9cb6-4750-8a59-95d98e8f29fc"],
+ CellID->460110590,ExpressionUUID->"4efd3c79-6036-4068-b73b-9adb6b22745d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -561,7 +561,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->130455089,ExpressionUUID->"7f659bae-b65d-4f72-b200-f2264cb6e1fd"]
+ CellID->130455089,ExpressionUUID->"356b9dad-14c7-443e-ad8d-e3f15a8ca336"]
 }, Closed]]
 }, Closed]],
 
@@ -592,7 +592,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "docs", "examples"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"6e646b7a-c922-41bb-876b-efa0d5435ede"]], \
+   "Text"}]],ExpressionUUID->"bb1484b3-3713-484e-9232-ab657135b96d"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
@@ -602,7 +602,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->152397887,ExpressionUUID->"037a6cbe-9d01-4202-a620-c7dd52a8d52e"],
+ CellID->152397887,ExpressionUUID->"4e4ad52d-727a-41c0-a5e7-4d64f4ca6c58"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -625,7 +625,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->74779509,ExpressionUUID->"0c72751d-b412-4efd-bd7e-dfecadf88332"],
+ CellID->74779509,ExpressionUUID->"5fe310b1-079e-48fe-9c94-db147161015c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -648,7 +648,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->203216,ExpressionUUID->"79704b92-a8d8-461b-9740-3fa00dc110f7"],
+ CellID->203216,ExpressionUUID->"7eaaafe8-fc3b-493f-b362-d048ed1e4b5f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -671,7 +671,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->193668377,ExpressionUUID->"36a1f41b-c2e8-4b3b-9bcd-ef9575e4c9f4"],
+ CellID->193668377,ExpressionUUID->"7e416423-58c8-4d5b-95bb-9c64cbc76b2a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -694,7 +694,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->324962488,ExpressionUUID->"066e540b-3a46-46dc-8531-dbeadde7666f"],
+ CellID->324962488,ExpressionUUID->"1f4f72e2-2a9a-4e41-a5bd-87303a9dbe34"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -717,7 +717,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->325926118,ExpressionUUID->"0d23b5bb-15c6-4480-82f7-8b575acd0c53"],
+ CellID->325926118,ExpressionUUID->"29484a21-b06c-41c5-8585-51fb58f9b262"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -740,7 +740,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerSVGIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->245554803,ExpressionUUID->"e741b6a4-cdb1-4f33-a032-88a7c5077a44"]
+ CellID->245554803,ExpressionUUID->"77b936ba-299b-47c6-9aec-bc43b6587bf7"]
 }, Closed]],
 
 Cell[BoxData[
@@ -764,7 +764,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->573431502,ExpressionUUID->"f4e44cf1-8eee-41f5-bdb4-87b274731ccb"],
+ CellID->573431502,ExpressionUUID->"d6f8b723-fc10-4ae2-94fd-e80ea8efe8db"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -787,7 +787,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->68570050,ExpressionUUID->"d2cfcfb7-ac19-4bd9-8752-053d3e75a8b7"],
+ CellID->68570050,ExpressionUUID->"bbbe444b-88eb-4727-9e50-fc8e5079bfff"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -810,7 +810,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerJSIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->778544085,ExpressionUUID->"f231c8c1-591e-4df8-b965-020db44c7311"],
+ CellID->778544085,ExpressionUUID->"511f54cc-1bf0-4724-a21b-73e06a131af1"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -833,7 +833,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->11975085,ExpressionUUID->"ee6d9f08-a1de-4ff2-b169-05b356bc21ed"],
+ CellID->11975085,ExpressionUUID->"48c4bc20-ceb9-4151-946b-c57c026f40ab"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -856,7 +856,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->166987516,ExpressionUUID->"3f1213ac-aa99-4b1b-80a6-077e28187c1b"],
+ CellID->166987516,ExpressionUUID->"02895144-2fe7-4dde-b85d-1f07ea127af4"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -879,7 +879,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->500177569,ExpressionUUID->"fc27ae6a-adc6-433c-b406-bbd17714423a"],
+ CellID->500177569,ExpressionUUID->"8b920ced-5fbe-4f4b-a338-4a8de06060cc"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -902,7 +902,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->59548678,ExpressionUUID->"e27a6ac0-fd59-4abd-bab2-ebd450604584"],
+ CellID->59548678,ExpressionUUID->"ab91e57e-0455-4a61-ab1c-06752a4d5113"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -925,7 +925,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerSVGIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->521128048,ExpressionUUID->"dc2af8c7-db12-4aac-8981-6a2a1c6c9eb1"],
+ CellID->521128048,ExpressionUUID->"6092adfc-5f39-460f-ae61-7596c9629ffe"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -948,7 +948,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerGIFIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->335884738,ExpressionUUID->"f632adf4-7bbe-4b3c-b8e9-90dc7f91273c"],
+ CellID->335884738,ExpressionUUID->"709d0502-5381-41fb-8d7f-68505ed8c889"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -971,7 +971,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->13516013,ExpressionUUID->"9fcccd83-445e-4546-9d1b-aaa65ca89224"],
+ CellID->13516013,ExpressionUUID->"8590ae8c-6c5d-429d-aa41-160ddffffb1e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -994,7 +994,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1476530,ExpressionUUID->"9323e0b1-4e6f-4261-9f5b-8e1e3ede41e0"],
+ CellID->1476530,ExpressionUUID->"b23274c5-ab0e-498f-bb53-081701b9811e"],
 
 Cell[CellGroupData[{
 
@@ -1023,7 +1023,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "docs", "resources"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"76b3bd06-55de-4426-b6c1-cfa92c7464a3"]], \
+   "Text"}]],ExpressionUUID->"270a26f3-8bdd-47cb-9bc5-23d86b50c620"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
@@ -1033,7 +1033,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->22791978,ExpressionUUID->"1541990f-7805-4605-a62c-a506c1fd4527"],
+ CellID->22791978,ExpressionUUID->"3968fa6d-0ce3-4920-ba25-db254163872e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1056,7 +1056,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->37631698,ExpressionUUID->"5c483001-1516-4513-b85c-cdce2ef3dc6e"],
+ CellID->37631698,ExpressionUUID->"a6116382-26a0-4207-895a-a905e8704fa8"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1079,7 +1079,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->880919189,ExpressionUUID->"03bf5841-b516-428c-b826-32d3bfcb7e45"]
+ CellID->880919189,ExpressionUUID->"456229c1-4624-443c-84f6-46ac375fc51a"]
 }, Closed]],
 
 Cell[BoxData[
@@ -1103,7 +1103,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerCSSIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->86127823,ExpressionUUID->"f9f76040-e91e-45fa-95a8-0089f84cb11a"]
+ CellID->86127823,ExpressionUUID->"8db520ac-a711-4e9b-b7fb-22b5866a19d5"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -1133,7 +1133,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"ecb4347a-3d46-4a4e-b83e-791478d0827c"]], \
+   "Text"}]],ExpressionUUID->"d259b1e0-5320-4755-bcd1-68f1db18a3ee"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -1143,7 +1143,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->592946268,ExpressionUUID->"eb8455a3-f83f-4ab2-9bca-d0b0a2ac9d38"],
+ CellID->592946268,ExpressionUUID->"cae0120d-44e9-4f53-855f-3c138b0beba1"],
 
 Cell[CellGroupData[{
 
@@ -1171,7 +1171,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "demo"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"515756d2-7460-498f-abf5-73678ba58b8f"]], \
+   "Text"}]],ExpressionUUID->"c01cedd5-5068-4aeb-ba58-f4b2f97af77e"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
@@ -1181,7 +1181,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->208265800,ExpressionUUID->"1b9717bf-3e0c-4503-894e-5c5dabb38cea"],
+ CellID->208265800,ExpressionUUID->"9b6ee449-e384-4116-aa7d-112bf2fbbef9"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1204,7 +1204,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->519057994,ExpressionUUID->"5a3baab5-dd9e-458a-848c-a704d136e06c"],
+ CellID->519057994,ExpressionUUID->"595d4507-fc0a-424d-a470-5f9d12aed9a2"],
 
 Cell[CellGroupData[{
 
@@ -1232,7 +1232,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "demo", "public"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"9cb1991e-e742-4970-a7a6-bbad86bcc216"]], \
+   "Text"}]],ExpressionUUID->"772a75fb-e4f1-40bd-b0c6-2db98f0f3c21"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -1242,7 +1242,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->684616486,ExpressionUUID->"fc333b60-8f3a-4a4e-a84d-d611877f6a02"],
+ CellID->684616486,ExpressionUUID->"76af5ce5-aa81-4827-af7d-28cb39d858ab"],
 
 Cell[CellGroupData[{
 
@@ -1270,7 +1270,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "demo", "public", "docs"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"6ac70731-2d68-4662-aa2b-9a9dfdd8fa35"]], \
+   "Text"}]],ExpressionUUID->"748ce7ba-882e-4364-ae24-bf14858132d1"]], \
 "FileManagerDirectory",
  CellMargins->{{69 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 130},
@@ -1280,7 +1280,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->769629352,ExpressionUUID->"5ea688c3-be5a-4a4b-a1e0-90a215ae50ed"],
+ CellID->769629352,ExpressionUUID->"f5337618-063e-4f51-a6c7-5d23e71e1c88"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1304,7 +1304,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->148625520,ExpressionUUID->"900cab17-bbcc-479a-bb9d-11cb4fc32e36"],
+ CellID->148625520,ExpressionUUID->"18080fd7-811c-4ea8-8d1e-87603d8b679b"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1328,7 +1328,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->46966651,ExpressionUUID->"89ad3ec3-f63f-49f8-8ff7-d234d0a97e13"],
+ CellID->46966651,ExpressionUUID->"4b136f8d-fffb-466d-b464-957d296f84d6"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1351,7 +1351,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->156018585,ExpressionUUID->"3edff1b4-887c-4b14-949f-e5830e640cc5"],
+ CellID->156018585,ExpressionUUID->"7a9584a3-2dad-4293-a604-05cecbd87671"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1375,7 +1375,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->246749316,ExpressionUUID->"1236c6c7-0c76-4f58-ba1b-634f8f2b3cfb"],
+ CellID->246749316,ExpressionUUID->"b492e2a7-7270-4fcb-9f3c-c4a39d8f677a"],
 
 Cell[CellGroupData[{
 
@@ -1404,7 +1404,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "demo", "public", "docs", "tutorial"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"1a207ec6-6e8f-4695-afc6-7f11d8cfbcae"]], \
+   "Text"}]],ExpressionUUID->"13044d8a-231d-4218-b190-b672974b8726"]], \
 "FileManagerDirectory",
  CellMargins->{{92 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 140},
@@ -1414,7 +1414,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->84605708,ExpressionUUID->"2338a5c0-f712-4990-ac50-cf116892fae5"],
+ CellID->84605708,ExpressionUUID->"09347246-9263-470b-8443-44f8e12d143c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1439,7 +1439,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->190807326,ExpressionUUID->"79e36a65-26dc-40e9-9acf-ac37b44793e7"],
+ CellID->190807326,ExpressionUUID->"9681753a-3c83-4ee2-b734-4fd9d40c0d44"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1464,7 +1464,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->952129031,ExpressionUUID->"7059d2d9-474d-470f-a2a5-4e20a6efd01c"],
+ CellID->952129031,ExpressionUUID->"12ac6482-2ed2-45ce-9e8e-f499295f5e93"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1489,7 +1489,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->775459214,ExpressionUUID->"0171fd60-5e99-457e-b2e8-16d5b118f21e"],
+ CellID->775459214,ExpressionUUID->"cc373bdf-6d60-42a8-814a-dd4d89322d4d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1514,7 +1514,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->130352149,ExpressionUUID->"99408011-5733-4805-a52a-be3074f192b9"],
+ CellID->130352149,ExpressionUUID->"e02232b5-9523-4e00-bdce-46e497d8e162"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1539,7 +1539,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->489623651,ExpressionUUID->"07f46df2-e799-4aca-a669-554de63a6930"]
+ CellID->489623651,ExpressionUUID->"0b924f4a-eb97-4c81-bbdb-71af04a293c4"]
 }, Closed]]
 }, Closed]],
 
@@ -1570,7 +1570,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "demo", "public", "examples"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"eacd02e7-e73e-47d7-af6c-ad2fbcf93c47"]], \
+   "Text"}]],ExpressionUUID->"ac3e7a5e-c977-46d9-ac58-707d146147ab"]], \
 "FileManagerDirectory",
  CellMargins->{{69 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 130},
@@ -1580,7 +1580,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->402043756,ExpressionUUID->"8020d274-55c8-431b-be4f-afbeb1c10e14"],
+ CellID->402043756,ExpressionUUID->"42bd153c-e9bb-4ef9-85bb-c252039a431d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1605,7 +1605,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->30416308,ExpressionUUID->"7d3dfe7e-a97e-4c43-a3d5-7a646929d098"],
+ CellID->30416308,ExpressionUUID->"b91bdc16-997d-46ba-bde6-9a58c2850c96"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1630,7 +1630,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->40037823,ExpressionUUID->"93ef3ede-8cdf-4367-b89f-f3e3f5fe19f2"],
+ CellID->40037823,ExpressionUUID->"20ec2322-a467-4747-ba40-e1c7c05c43a6"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1655,7 +1655,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerSVGIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->285769050,ExpressionUUID->"2d10791c-6897-42a2-91c0-f2ac8b3de53d"]
+ CellID->285769050,ExpressionUUID->"7dfbd753-a975-4cb3-92db-c6e2f6af19d0"]
 }, Closed]],
 
 Cell[BoxData[
@@ -1679,7 +1679,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->301081683,ExpressionUUID->"b949eafe-8f25-439d-b0a7-301cbee99a8a"],
+ CellID->301081683,ExpressionUUID->"36936a56-de0f-49c0-b5ef-d71053e9b40d"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1702,7 +1702,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerJSIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->143479891,ExpressionUUID->"b991bd76-7f10-43fb-96d3-35876a03ef74"],
+ CellID->143479891,ExpressionUUID->"f322dd92-b8c4-4d82-9dad-ba96b3158109"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1725,7 +1725,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->330614042,ExpressionUUID->"22fe6e9d-bebc-41f2-b55f-99c2c8a240f4"],
+ CellID->330614042,ExpressionUUID->"0c91e76e-7630-4741-9397-cb928ef046ce"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1748,7 +1748,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->227962700,ExpressionUUID->"dc8d83d6-c3b5-47d6-a4ad-1caa36c2af55"],
+ CellID->227962700,ExpressionUUID->"e836d764-5849-471b-8867-4c2ba205f240"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1772,7 +1772,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerSVGIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->432058473,ExpressionUUID->"8dd6dc05-8139-4bf5-a62c-bd0a081f49b0"],
+ CellID->432058473,ExpressionUUID->"c9e24e00-33d0-4982-a581-4159234d3322"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1795,7 +1795,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->258799745,ExpressionUUID->"ef4572c7-8a5e-4697-9c7c-d5e06fcdfde5"],
+ CellID->258799745,ExpressionUUID->"1681ed28-7dc6-4463-98fb-22e858627451"],
 
 Cell[CellGroupData[{
 
@@ -1824,7 +1824,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "demo", "public", "resources"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"605fbab6-6660-4639-8e2f-c55f253412d7"]], \
+   "Text"}]],ExpressionUUID->"eee97e04-f65c-4acc-854f-56f0e0e91a63"]], \
 "FileManagerDirectory",
  CellMargins->{{69 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 130},
@@ -1834,7 +1834,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->514797689,ExpressionUUID->"fbc7c253-0222-41a3-bff3-2f260df15c73"],
+ CellID->514797689,ExpressionUUID->"bd716a9e-8039-4198-bdcc-cfd6b6fc688b"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1859,7 +1859,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->74405379,ExpressionUUID->"5c3f5c3c-6afc-4394-9cb6-3eb8f044670a"]
+ CellID->74405379,ExpressionUUID->"7d5f5c21-bbb4-480e-8060-6d0c774d56b5"]
 }, Closed]],
 
 Cell[BoxData[
@@ -1883,7 +1883,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerCSSIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->351917730,ExpressionUUID->"a2f9250d-ed60-4c57-91b4-bc3ad2877eec"]
+ CellID->351917730,ExpressionUUID->"37bae86c-932f-42cc-815d-6f406e1781bc"]
 }, Closed]],
 
 Cell[BoxData[
@@ -1907,7 +1907,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerTXTIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->949999174,ExpressionUUID->"0a625532-1cf6-4943-98df-5258d2e249b8"],
+ CellID->949999174,ExpressionUUID->"8f56f220-69be-4837-aee5-783488639237"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1930,7 +1930,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->228062785,ExpressionUUID->"fdc328ed-0480-4e96-829d-3253665acb1a"],
+ CellID->228062785,ExpressionUUID->"3062c85a-8da4-42b8-aed6-c20128975318"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1953,7 +1953,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->50897250,ExpressionUUID->"e6c5ebcb-ccbc-4742-bde4-146946f64ef0"]
+ CellID->50897250,ExpressionUUID->"04218e71-3066-438f-9427-02dd83d0d850"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -1983,7 +1983,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "lowlevel"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"47fd6b85-fd45-4e76-b175-e2cb5198b6fd"]], \
+   "Text"}]],ExpressionUUID->"1cd3cf7e-8565-4ebf-86b9-9d9064a4cf6e"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
@@ -1993,7 +1993,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->21180125,ExpressionUUID->"2e00cf54-bee4-4585-a92a-bc286203fce6"],
+ CellID->21180125,ExpressionUUID->"b8c9f1d2-5ba6-499b-96b8-6995d1b3348e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2016,7 +2016,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerTXTIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->381263659,ExpressionUUID->"6726517f-2078-432a-a269-2ea957ccae60"],
+ CellID->381263659,ExpressionUUID->"204ce9db-9470-4f20-b8c7-05eeae3e2bea"],
 
 Cell[CellGroupData[{
 
@@ -2044,7 +2044,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "examples", "lowlevel", "public"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"63145cc6-a61d-48e6-bfd8-a496c0b6e0e2"]], \
+   "Text"}]],ExpressionUUID->"8e4adf66-7d6d-48fa-80f3-929c76e0ae30"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -2054,7 +2054,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->401021910,ExpressionUUID->"27371e76-50d4-464e-9b71-62ae1041aae5"],
+ CellID->401021910,ExpressionUUID->"3c721ece-bdb6-49fc-b67e-4501a6f26287"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2078,7 +2078,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->393723362,ExpressionUUID->"b3d0fb5f-f52d-434f-95c3-59052ad3b4dd"],
+ CellID->393723362,ExpressionUUID->"58df2238-0913-431b-bcbe-63bc0c610cd6"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2102,7 +2102,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->330750743,ExpressionUUID->"f962f44a-14e4-4058-a493-c5c1813b8899"],
+ CellID->330750743,ExpressionUUID->"7cb1fa8b-8ae1-4171-a37d-4c5a594e4d2e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2125,7 +2125,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->155355492,ExpressionUUID->"eaeab307-2f12-4adb-947e-451cac23291d"],
+ CellID->155355492,ExpressionUUID->"76ceb571-6aaf-49e8-885a-058e9cd8465f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2148,7 +2148,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->954237928,ExpressionUUID->"f7612516-a4b2-4baf-863b-c6438b96de4b"],
+ CellID->954237928,ExpressionUUID->"5134295c-40ec-4e71-bb90-58013adfd008"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2171,7 +2171,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->293547596,ExpressionUUID->"2f3bced3-d9e0-4208-9274-4a68c4d0a3d5"],
+ CellID->293547596,ExpressionUUID->"c9fb9126-32ee-4761-aa74-685caff17155"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2195,7 +2195,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->325168788,ExpressionUUID->"df6ee493-c749-46e7-8613-4c188a338aa3"]
+ CellID->325168788,ExpressionUUID->"ea633dec-d8c5-408a-bbe8-60282c57bb6b"]
 }, Closed]],
 
 Cell[BoxData[
@@ -2219,7 +2219,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->63898640,ExpressionUUID->"223aab3d-0391-4650-95c1-61f4d92eefb3"],
+ CellID->63898640,ExpressionUUID->"64b23241-b2ae-48b4-aaa3-44428dd09c99"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2242,7 +2242,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->292076870,ExpressionUUID->"cdf06946-ecac-432a-bf87-7a1076fba079"]
+ CellID->292076870,ExpressionUUID->"6c9a400f-a09d-4589-b53b-954a5f66a161"]
 }, Closed]]
 }, Closed]],
 
@@ -2272,7 +2272,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Kernel"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"5f677598-34d4-443b-b6d5-73d029374a25"]], \
+   "Text"}]],ExpressionUUID->"2a646980-c00d-44e7-98fc-58182d36982e"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -2282,19 +2282,19 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerKernelIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->72985475,ExpressionUUID->"a003d976-9c8b-4adf-a7cd-1a8ef090b46a"],
+ CellID->72985475,ExpressionUUID->"1051dd28-1d2a-4d75-9c69-3f8ec3213d3d"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
-   TemplateBox[{"\"HTTPHandler.wl\"", 
+   TemplateBox[{"\"HTTP.wl\"", 
      FileNameJoin[{
-       NotebookDirectory[], "Kernel", "HTTPHandler.wl"}]},
+       NotebookDirectory[], "Kernel", "HTTP.wl"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
   FileNameJoin[{
-    NotebookDirectory[], "Kernel", "HTTPHandler.wl"}],
+    NotebookDirectory[], "Kernel", "HTTP.wl"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
@@ -2305,7 +2305,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->426427089,ExpressionUUID->"909e42fa-f95d-4c0f-b788-825564bfdef5"],
+ CellID->404704303,ExpressionUUID->"e7930353-4dfa-43b0-86b6-0dce0509b064"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2328,7 +2328,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->84533689,ExpressionUUID->"91e96dcd-b0fd-40d6-89c5-6e3399ffb8e6"],
+ CellID->84533689,ExpressionUUID->"22224dcb-a857-4ca0-bfa2-8f6801c07a71"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2351,19 +2351,19 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->567426415,ExpressionUUID->"5db30c2f-6452-4f6c-a4df-6d6305aa8678"],
+ CellID->567426415,ExpressionUUID->"43ee66ab-577f-4740-9f5c-6f3063febcb1"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
-   TemplateBox[{"\"LTPHandler.wl\"", 
+   TemplateBox[{"\"LTP.wl\"", 
      FileNameJoin[{
-       NotebookDirectory[], "Kernel", "LTPHandler.wl"}]},
+       NotebookDirectory[], "Kernel", "LTP.wl"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
   FileNameJoin[{
-    NotebookDirectory[], "Kernel", "LTPHandler.wl"}],
+    NotebookDirectory[], "Kernel", "LTP.wl"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
@@ -2374,19 +2374,19 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->823649595,ExpressionUUID->"20d0028b-4382-4c81-82ad-32b9ad1ff39c"],
+ CellID->374441007,ExpressionUUID->"d08b9031-22a9-425c-a3de-cc9e968bd2d9"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
-   TemplateBox[{"\"TCPServer.wl\"", 
+   TemplateBox[{"\"TCP.wl\"", 
      FileNameJoin[{
-       NotebookDirectory[], "Kernel", "TCPServer.wl"}]},
+       NotebookDirectory[], "Kernel", "TCP.wl"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
   FileNameJoin[{
-    NotebookDirectory[], "Kernel", "TCPServer.wl"}],
+    NotebookDirectory[], "Kernel", "TCP.wl"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
@@ -2397,30 +2397,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->490657391,ExpressionUUID->"ca02d97e-7725-4bbb-9855-d7e0345763d7"],
-
-Cell[BoxData[
- InterpretationBox[
-  TagBox[
-   TemplateBox[{"\"WSHandler.wl\"", 
-     FileNameJoin[{
-       NotebookDirectory[], "Kernel", "WSHandler.wl"}]},
-    "FileManagerFileOpenerTemplate"],
-   Annotation[#, 
-    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
-  FileNameJoin[{
-    NotebookDirectory[], "Kernel", "WSHandler.wl"}],
-  BoxID -> "FileTreePath",
-  BaseStyle->{"Text"}]], "FileManagerFile",
- CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
- CellGroupingRules->{"SectionGrouping", 110},
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
-    Inherited}, {Inherited, Inherited}},
- CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->312527287,ExpressionUUID->"3acf7463-9771-48c5-ab27-e68734e25003"],
+ CellID->780532346,ExpressionUUID->"ef4520c7-9c1e-4a32-b03e-0a4dcfafd2bf"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2443,7 +2420,30 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->179105077,ExpressionUUID->"869a01b9-92bf-475f-9c9e-4b33d25fdddc"]
+ CellID->179105077,ExpressionUUID->"aa63b96c-bf9c-4c41-a245-9463056ff1d5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"WS.wl\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "Kernel", "WS.wl"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "Kernel", "WS.wl"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 110},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
+    Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->23526198,ExpressionUUID->"eb95c9ca-98cf-4753-85db-fe2728d884ef"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2467,7 +2467,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerGIFIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->165581346,ExpressionUUID->"86fcdfb4-bdf2-4e9b-81e4-a36df43a366d"],
+ CellID->165581346,ExpressionUUID->"d9fe772f-ce5c-40a2-b17e-a891255cadc5"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2490,7 +2490,92 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerPacletInfoIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->345773228,ExpressionUUID->"fcc4d534-ad40-4e57-b88d-c9fbde02f8c1"],
+ CellID->345773228,ExpressionUUID->"301295a0-a15b-4f00-8e2c-4bed829076ff"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   ActionMenuBox["\<\"public\"\>", {"\<\"Open/Close Group\"\>":>(SelectionMove[
+      ParentCell[
+       EvaluationCell[]], All, Cell]; FrontEndTokenExecute[
+      EvaluationNotebook[], "OpenCloseGroup"]), "\<\"Open Directory\"\>":>
+    DefinitionNotebookClient`FileTreeOpen[
+     ParentCell[
+      EvaluationCell[]]], "\<\"Un/Mark as Excluded\"\>":>
+    DefinitionNotebookClient`FileTreeExclusionToggle[
+     ParentCell[
+      EvaluationCell[]]], "\<\"Copy Path to Clipboard\"\>":>
+    DefinitionNotebookClient`FileTreeCopy[
+     ParentCell[
+      EvaluationCell[]]]},
+    Appearance->None,
+    BaseStyle->{"Text"}],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "public"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{
+   "Text"}]],ExpressionUUID->"77b8f86b-f071-43b0-b3bb-d1eebec1108d"]], \
+"FileManagerDirectory",
+ CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 100},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
+     None], Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->619027362,ExpressionUUID->"123edca2-72b5-48d4-9415-c94004ccc3d8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"index.html\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "public", "index.html"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "public", "index.html"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 110},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
+    Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->324181229,ExpressionUUID->"df64bbcd-a1cc-45a4-8047-79cd3c5c71d7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"page.wsp\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "public", "page.wsp"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "public", "page.wsp"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 110},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerHTMLIconTemplate"]], Background -> None], 
+    Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->172243877,ExpressionUUID->"fd07b704-079d-4c1a-8280-ba899044fb3c"]
+}, Closed]],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2513,7 +2598,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerTXTIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->93319761,ExpressionUUID->"831ae1ca-22aa-47c9-924b-2d507b285536"],
+ CellID->93319761,ExpressionUUID->"ea60bac8-2bfc-4aa0-a4c7-5d81958267bd"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2536,7 +2621,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->404901610,ExpressionUUID->"cf4e304b-6b54-4d42-805c-dde72e358d82"],
+ CellID->404901610,ExpressionUUID->"63aa03da-e915-4396-b5bf-6c35dad05a18"],
 
 Cell[CellGroupData[{
 
@@ -2565,7 +2650,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Scripts"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"e1fb9492-e476-4431-aca9-0cf9bba851f2"]], \
+   "Text"}]],ExpressionUUID->"173a4fee-0555-47e8-abcd-6a2a793e28f8"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -2575,19 +2660,19 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->121433945,ExpressionUUID->"ce3e9fda-c566-412f-abb0-a8e28ac8adc2"],
+ CellID->121433945,ExpressionUUID->"a601d58b-902e-4c62-be62-0b3db301e924"],
 
 Cell[BoxData[
  InterpretationBox[
   TagBox[
-   TemplateBox[{"\"SimpleHTTPServer.wls\"", 
+   TemplateBox[{"\"AppServer.wls\"", 
      FileNameJoin[{
-       NotebookDirectory[], "Scripts", "SimpleHTTPServer.wls"}]},
+       NotebookDirectory[], "Scripts", "AppServer.wls"}]},
     "FileManagerFileOpenerTemplate"],
    Annotation[#, 
     DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
   FileNameJoin[{
-    NotebookDirectory[], "Scripts", "SimpleHTTPServer.wls"}],
+    NotebookDirectory[], "Scripts", "AppServer.wls"}],
   BoxID -> "FileTreePath",
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
@@ -2598,7 +2683,53 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->6155221,ExpressionUUID->"2629ca4b-a0a9-48c4-998b-eed7669277cd"]
+ CellID->42605484,ExpressionUUID->"11481324-b507-464e-a90b-58e9e23a2246"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"RemoteKernel.wls\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "Scripts", "RemoteKernel.wls"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "Scripts", "RemoteKernel.wls"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 110},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
+    Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->34418653,ExpressionUUID->"c8447ef8-4584-454b-bf1a-c594d586650e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"WebKernel.wls\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "Scripts", "WebKernel.wls"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "Scripts", "WebKernel.wls"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 110},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
+    Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->195849269,ExpressionUUID->"85d6836d-3111-4fe7-b224-65e66c06c49d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2627,7 +2758,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Tests"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"c25a3166-3bf9-46fe-be1d-075b4ce9dbe5"]], \
+   "Text"}]],ExpressionUUID->"05d000c4-2c84-437d-99ff-f2feb3862726"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -2637,7 +2768,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->363865957,ExpressionUUID->"7ad3c02c-91fd-407e-964e-af18e2674355"],
+ CellID->363865957,ExpressionUUID->"b7f29264-3e81-4fe6-b154-e57220cd8e16"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2660,7 +2791,30 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->396130166,ExpressionUUID->"8237b235-22b2-4c9f-b8da-77c9eeadb068"],
+ CellID->396130166,ExpressionUUID->"355e018e-8438-4240-847d-3d5215e0cfa5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"PerformanceTests.nb\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "Tests", "PerformanceTests.nb"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[1]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "Tests", "PerformanceTests.nb"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 110},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
+    Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->117954576,ExpressionUUID->"5374bb4a-465e-4bd8-bcd0-781578a9ba73"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2683,7 +2837,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
      Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->270076724,ExpressionUUID->"89b0fdd7-59de-472a-a84a-95eaa2554a72"]
+ CellID->270076724,ExpressionUUID->"bba182c0-47ef-41e2-b23b-111437bccd2b"]
 }, Closed]],
 
 Cell[BoxData[
@@ -2707,7 +2861,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerPNGIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->472155390,ExpressionUUID->"b243080c-8493-44a0-80f9-4525d512ecbe"],
+ CellID->472155390,ExpressionUUID->"eae41535-5779-4383-a196-b365665bd26e"],
 
 Cell[CellGroupData[{
 
@@ -2736,7 +2890,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Tinyweb"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"045b320a-9d95-496f-b95f-a6e8b1c78971"]], \
+   "Text"}]],ExpressionUUID->"3673f683-3fbf-4a5f-92a6-fdfc2d2f5747"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -2746,7 +2900,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->752649551,ExpressionUUID->"13dc5350-edee-4b05-b256-af62afb0838c"],
+ CellID->752649551,ExpressionUUID->"c8dd9fd7-dd68-4498-85a9-f05f9c7ad61a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2769,7 +2923,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->230829803,ExpressionUUID->"42eb1b9c-8a19-40e2-96d3-08377ed325bb"]
+ CellID->230829803,ExpressionUUID->"7041aaa3-1ab7-43e0-a46a-08c9124f0f7f"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -2798,7 +2952,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "WSP"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"8c0e60fc-7911-4bc1-b798-6d50d144267f"]], \
+   "Text"}]],ExpressionUUID->"d3a60249-f9ac-4d52-997b-fba0042fafcd"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -2808,7 +2962,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->275294373,ExpressionUUID->"b3b858e3-f365-44eb-8859-de935480773b"],
+ CellID->275294373,ExpressionUUID->"8fe7e450-d0c6-489c-b4ad-5a8322738a9a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -2831,13 +2985,13 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->25283743,ExpressionUUID->"bf31e973-aea7-4936-87a9-b33482bf2a6c"]
+ CellID->25283743,ExpressionUUID->"8d951131-ab3c-4694-ba66-fbc40457d07c"]
 }, Closed]],
 
 Cell["", "FileManagerBottomSpacer",
  CellGroupingRules->{"SectionGrouping", 100},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->131378171,ExpressionUUID->"8fe6adbc-1c42-4aa1-83f7-e1051338bd62"]
+ CellID->131378171,ExpressionUUID->"2554c77e-cd20-49cd-a5a0-76399c398f01"]
 }, Open  ]]
 }, Open  ]],
 
@@ -3179,7 +3333,7 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"$HistoryLength", " ", "=", " ", "0"}], ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[1]:=",
+ CellLabel->"In[15]:=",
  CellID->271262706,ExpressionUUID->"7e2b875b-6c2e-4bec-bea4-5fd3501da985"],
 
 Cell[BoxData[
@@ -3187,7 +3341,7 @@ Cell[BoxData[
   RowBox[{"SetDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[2]:=",
+ CellLabel->"In[16]:=",
  CellID->793481494,ExpressionUUID->"0938cda3-e82b-49e8-87a5-d3c08a93b805"],
 
 Cell[BoxData[
@@ -3195,1310 +3349,263 @@ Cell[BoxData[
   RowBox[{"PacletDirectoryLoad", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[3]:=",
+ CellLabel->"In[17]:=",
  CellID->996717066,ExpressionUUID->"dc3ffea7-7c9c-4fd7-937f-b87baef4ef31"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"Get", "[", "\"\<JerryI`Tinyweb`\>\"", "]"}], 
   ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[4]:=",
- CellID->172764492,ExpressionUUID->"daa46fa9-aa49-4f86-b934-0632a26ded25"]
-}, Open  ]],
+ CellLabel->"In[21]:=",
+ CellID->172764492,ExpressionUUID->"daa46fa9-aa49-4f86-b934-0632a26ded25"],
 
 Cell[CellGroupData[{
 
-Cell["Init", "Subsection",
- CellID->462042388,ExpressionUUID->"b1b8f228-4649-4e09-9303-603aa3b25bf3"],
-
-Cell[BoxData[
- RowBox[{"<<", "JerryI`Tinyweb`"}]], "Input",
- CellLabel->"In[5]:=",
- CellID->6593307,ExpressionUUID->"eef8d4c1-d3d1-41ca-b952-2f0a919e54f5"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Simple HTTP", "Subsection",
- CellID->67614708,ExpressionUUID->"59d84d8b-683d-4549-abfb-fc2684abfcbd"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"payload", " ", "=", " ", 
-    RowBox[{"RandomInteger", "[", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"0", ",", " ", "255"}], "}"}], ",", " ", 
-      RowBox[{"2", "^", "20"}]}], "]"}]}], ";"}], " "}]], "Input",
- CellLabel->"In[6]:=",
- CellID->203110076,ExpressionUUID->"c4232409-7535-4bda-a587-289566eaa5f3"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"mask", " ", "=", " ", 
-  RowBox[{"RandomInteger", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"0", ",", " ", "255"}], "}"}], ",", " ", "4"}], "]"}]}]], "Input",
- CellLabel->"In[7]:=",
- CellID->45497870,ExpressionUUID->"ef0ff3fd-6c4c-44dd-af3e-7c208e67c66c"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"76", ",", "225", ",", "171", ",", "17"}], "}"}]], "Output",
- CellLabel->"Out[7]=",
- CellID->124565068,ExpressionUUID->"fbc96350-851d-442e-a362-287ad4537cd4"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"RepeatedTiming", "[", 
-  RowBox[{
-   RowBox[{"JerryI`Tinyweb`WSHandler`Private`unmask", "[", 
-    RowBox[{"mask", ",", " ", "payload"}], "]"}], ";"}], "]"}]], "Input",
- CellLabel->"In[8]:=",
- CellID->922246722,ExpressionUUID->"36883070-0d2f-48b5-8ffe-0c0e94dd22b9"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"0.0615113875`", ",", "Null"}], "}"}]], "Output",
- CellLabel->"Out[8]=",
- CellID->292120094,ExpressionUUID->"36829e14-0ba9-447d-8181-71d75f416813"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"unmask", " ", "=", " ", 
-  RowBox[{"FunctionCompile", "[", "\[IndentingNewLine]", 
-   RowBox[{"Function", "[", 
-    RowBox[{
-     RowBox[{"{", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Typed", "[", 
-        RowBox[{"maskingKey", ",", " ", 
-         RowBox[{"\"\<NumericArray\>\"", "::[", 
-          RowBox[{"\"\<UnsignedInteger8\>\"", ",", " ", "1"}], "]"}]}], "]"}],
-        ",", " ", "\[IndentingNewLine]", 
-       RowBox[{"Typed", "[", 
-        RowBox[{"payload", ",", " ", 
-         RowBox[{"\"\<NumericArray\>\"", "::[", 
-          RowBox[{"\"\<UnsignedInteger8\>\"", ",", " ", "1"}], "]"}]}], 
-        "]"}]}], "\[IndentingNewLine]", "}"}], ",", " ", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Module", "[", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"result", "=", "payload"}], "}"}], ",", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"Table", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"result", "[", 
-            RowBox[{"[", "i", "]"}], "]"}], "=", 
-           RowBox[{"BitXor", "[", 
-            RowBox[{
-             RowBox[{"payload", "[", 
-              RowBox[{"[", "i", "]"}], "]"}], ",", 
-             RowBox[{"maskingKey", "[", 
-              RowBox[{"[", 
-               RowBox[{
-                RowBox[{"Mod", "[", 
-                 RowBox[{
-                  RowBox[{"i", "-", "1"}], ",", "4"}], "]"}], "+", "1"}], 
-               "]"}], "]"}]}], "]"}]}], ",", 
-          RowBox[{"{", 
-           RowBox[{"i", ",", "1", ",", 
-            RowBox[{"Length", "[", "payload", "]"}]}], "}"}]}], "]"}], ";", 
-        "\[IndentingNewLine]", "result"}]}], "]"}]}], "\[IndentingNewLine]", 
-    "]"}], "]"}]}]], "Input",
- CellLabel->"In[10]:=",
- CellID->331503625,ExpressionUUID->"f45cc3c6-c880-403f-afa4-3b178c7e1d1d"],
+Cell[BoxData["\<\"\\n- - - - - - - - - - - - - - - - - - - - - - - - - - - \
+-\"\>"], "Print", "Excluded",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->150092252,ExpressionUUID->"bcb6f628-b80d-4284-82cf-56d01f577dd8"],
 
 Cell[BoxData[
  InterpretationBox[
-  RowBox[{
-   TagBox["Failure",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{
-      PaneSelectorBox[{False -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
-              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
-              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
-            FrameBox[
-             StyleBox["\"\[WarningSign]\"", 
-              Directive["Message", 35], StripOnInput -> False], 
-             ContentPadding -> False, FrameStyle -> None, 
-             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-            GridBox[{{
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                   "\"Cannot find a definition for the function \
-\\!\\(\\*TagBox[\\\"Array`NewPackedArray\\\", Function[Short[Slot[1], 5]]]\\) \
-that takes arguments with the types \
-\\!\\(\\*TagBox[\\\"\\\\\\\"UnsignedInteger8\\\\\\\"\\\", \
-Function[Short[Slot[1], 5]]]\\) and \\!\\(\\*TagBox[\\\"\\\\\\\"Integer64\\\\\
-\\\"\\\", Function[Short[Slot[1], 5]]]\\).\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"TypeError\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
-              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
-              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
-            FrameBox[
-             StyleBox["\"\[WarningSign]\"", 
-              Directive["Message", 35], StripOnInput -> False], 
-             ContentPadding -> False, FrameStyle -> None, 
-             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-            GridBox[{{
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                   "\"Cannot find a definition for the function \
-\\!\\(\\*TagBox[\\\"Array`NewPackedArray\\\", Function[Short[Slot[1], 5]]]\\) \
-that takes arguments with the types \
-\\!\\(\\*TagBox[\\\"\\\\\\\"UnsignedInteger8\\\\\\\"\\\", \
-Function[Short[Slot[1], 5]]]\\) and \\!\\(\\*TagBox[\\\"\\\\\\\"Integer64\\\\\
-\\\"\\\", Function[Short[Slot[1], 5]]]\\).\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"TypeError\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Body\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox[
-                   RowBox[{"{", 
-                    
-                    RowBox[{
-                    "Array`NewPackedArray", ",", "\"UnsignedInteger8\"", ",", 
-                    "\"Integer64\""}], "}"}], HoldForm], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Stack\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox[
-                   RowBox[{"{", "}"}], HoldForm], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Exception\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox["\"LookupNotFound\"", HoldForm], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Constraint\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox[
-                   InterpretationBox[
-                    RowBox[{
-                    TagBox["LookupConstraint", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{
-                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"LookC\"", 
-                    GrayLevel[0.7], Bold, 7.877620387279507, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{
-                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification])}, 
-                    ImageSizeCache -> {27., {0., 10.}}], Frame -> True, 
-                    FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["Array`NewPackedArray", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"type: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeArrow", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxOpener"]], 
-                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
-                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyArr\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"arguments: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{"\"UnsignedInteger8\"", ",", "\"Integer64\""}], 
-                    "}"}], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"result: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"v16259\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxCloser"]], 
-                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyArr\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"arguments: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{"\"UnsignedInteger8\"", ",", "\"Integer64\""}], 
-                    "}"}], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"result: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"v16259\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"arguments: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeConstructor", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxOpener"]], ButtonFunction :> (
-                    Typeset`open$$ = True), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"UnsignedInteger8\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxCloser"]], ButtonFunction :> (
-                    Typeset`open$$ = False), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"UnsignedInteger8\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"implements: \"", ImageSize -> {90, Automatic}],
-                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", "\"UnsignedIntegers\"", "}"}], 
-                    "SummaryItem"]}]}}, GridBoxAlignment -> {"Columns" -> {{
-                    Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    
-                    TypeFramework`TypeObjects`TypeConstructor`\
-TypeConstructorObject[], Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True], ",", 
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeConstructor", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxOpener"]], ButtonFunction :> (
-                    Typeset`open$$ = True), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Integer64\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxCloser"]], ButtonFunction :> (
-                    Typeset`open$$ = False), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Integer64\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"implements: \"", ImageSize -> {90, Automatic}],
-                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", "\"SignedIntegers\"", "}"}], 
-                    "SummaryItem"]}]}}, GridBoxAlignment -> {"Columns" -> {{
-                    Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    
-                    TypeFramework`TypeObjects`TypeConstructor`\
-TypeConstructorObject[], Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True]}], "}"}], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"result: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeVariable", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyVar\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"id: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["16259", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Variable[120]\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"U\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{
-                    Automatic}}}, BaseStyle -> {ShowStringCharacters -> False,
-                     NumberMarks -> False, PrintPrecision -> 3, 
-                    ShowSyntaxStyles -> False}]}}, GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyVar\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"id: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["16259", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Variable[120]\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"U\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{
-                    Automatic}}}, BaseStyle -> {ShowStringCharacters -> False,
-                     NumberMarks -> False, PrintPrecision -> 3, 
-                    ShowSyntaxStyles -> False}]}}, GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    
-                    TypeFramework`TypeObjects`TypeVariable`\
-TypeVariableClassName[], Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True], "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    TypeFramework`TypeObjects`TypeArrow`TypeArrow[], 
-                    Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox[
-                    "\"monomorphic: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", "}"}], "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    BaselinePosition -> {1, 1}], True -> GridBox[{{
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"LookC\"", 
-                    GrayLevel[0.7], Bold, 7.877620387279507, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{
-                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification])}, 
-                    ImageSizeCache -> {27., {0., 10.}}], Frame -> True, 
-                    FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["Array`NewPackedArray", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"type: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeArrow", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxOpener"]], 
-                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
-                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyArr\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"arguments: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{"\"UnsignedInteger8\"", ",", "\"Integer64\""}], 
-                    "}"}], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"result: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"v16259\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxCloser"]], 
-                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyArr\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"arguments: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{"\"UnsignedInteger8\"", ",", "\"Integer64\""}], 
-                    "}"}], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"result: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"v16259\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"arguments: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeConstructor", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxOpener"]], ButtonFunction :> (
-                    Typeset`open$$ = True), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"UnsignedInteger8\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxCloser"]], ButtonFunction :> (
-                    Typeset`open$$ = False), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"UnsignedInteger8\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"implements: \"", ImageSize -> {90, Automatic}],
-                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", "\"UnsignedIntegers\"", "}"}], 
-                    "SummaryItem"]}]}}, GridBoxAlignment -> {"Columns" -> {{
-                    Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    
-                    TypeFramework`TypeObjects`TypeConstructor`\
-TypeConstructorObject[], Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True], ",", 
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeConstructor", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxOpener"]], ButtonFunction :> (
-                    Typeset`open$$ = True), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Integer64\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SummaryBoxCloser"]], ButtonFunction :> (
-                    Typeset`open$$ = False), Appearance -> None, 
-                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], 
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyC\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Integer64\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"*\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"implements: \"", ImageSize -> {90, Automatic}],
-                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", "\"SignedIntegers\"", "}"}], 
-                    "SummaryItem"]}]}}, GridBoxAlignment -> {"Columns" -> {{
-                    Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, 
-                    "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    
-                    TypeFramework`TypeObjects`TypeConstructor`\
-TypeConstructorObject[], Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True]}], "}"}], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"result: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    InterpretationBox[
-                    RowBox[{
-                    TagBox["TypeVariable", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{Typeset`open$$ = False, 
-                    Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyVar\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"id: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["16259", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Variable[120]\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"U\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{
-                    Automatic}}}, BaseStyle -> {ShowStringCharacters -> False,
-                     NumberMarks -> False, PrintPrecision -> 3, 
-                    ShowSyntaxStyles -> False}]}}, GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
-                    True -> GridBox[{{
-                    GraphicsBox[
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"TyVar\"", 
-                    GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
-                    False], TraditionalForm], {0, 0}], Background -> 
-                    GrayLevel[0.93], Axes -> False, AspectRatio -> 1, 
-                    ImageSize -> Dynamic[{Automatic, 
-                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
-                    Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
-                    Thickness[Tiny], 
-                    GrayLevel[0.55]]], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"id: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["16259", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"name: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"Variable[120]\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox["\"kind: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox["\"U\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{
-                    Automatic}}}, AutoDelete -> False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{
-                    Automatic}}}, BaseStyle -> {ShowStringCharacters -> False,
-                     NumberMarks -> False, PrintPrecision -> 3, 
-                    ShowSyntaxStyles -> False}]}}, GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    
-                    TypeFramework`TypeObjects`TypeVariable`\
-TypeVariableClassName[], Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True], "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
-                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
-                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
-                    "Rows" -> {{Top}}}, AutoDelete -> False, 
-                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
-                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    TypeFramework`TypeObjects`TypeArrow`TypeArrow[], 
-                    Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox[
-                    PaneBox[
-                    "\"monomorphic: \"", ImageSize -> {90, Automatic}], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", "}"}], "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    TypeFramework`LookupConstraint[], Selectable -> False, 
-                    Editable -> False, SelectWithContents -> True], HoldForm],
-                   "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Source\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox[
-                   TagBox[
-                    RowBox[{"Array`NewPackedArray", "[", 
-                    
-                    RowBox[{
-                    "Compile`AST`Macro`Builtin`Table`Private`res", ",", 
-                    "Compile`AST`Macro`Builtin`Table`Private`len"}], "]"}], 
-                    HoldForm], HoldForm], "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  Failure[
-  "TypeError", <|
-   "MessageTemplate" -> 
-    "Cannot find a definition for the function `1` that takes arguments with \
-the types `2` and `3`.", 
-    "MessageParameters" -> {
-     Array`NewPackedArray, "UnsignedInteger8", "Integer64"}, 
-    "Body" -> {Array`NewPackedArray, "UnsignedInteger8", "Integer64"}, 
-    "Stack" -> {}, "Exception" -> "LookupNotFound", "Constraint" -> 
-    TypeFramework`LookupConstraint[], "Source" -> HoldForm[
-      Array`NewPackedArray[
-      Compile`AST`Macro`Builtin`Table`Private`res, 
-       Compile`AST`Macro`Builtin`Table`Private`len]]|>],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- CellLabel->"Out[10]=",
- CellID->140121807,ExpressionUUID->"d56b6e2f-caf4-4be8-9eae-f305d6103a2f"]
-}, Open  ]],
-
-Cell[BoxData["maskBA"], "Input",
- CellID->197157830,ExpressionUUID->"36eb5cb6-eee4-479b-bbc2-d6c77cd15c1c"],
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[  ACTION  ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"PRE COMPILATION\"\>"}],
+  SequenceForm["", "[  ACTION  ]: ", "PRE COMPILATION"],
+  Editable->False]], "Print", "Excluded",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->76288170,ExpressionUUID->"ac9b5711-90ad-4157-832c-aa545bd2e537"],
 
 Cell[BoxData[
- RowBox[{"RepeatedTiming", "[", 
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[Start Time]: \"\>", 
+   "\[InvisibleSpace]", "\<\"Tue 14 Mar 2023 18:34:04\"\>"}],
+  SequenceForm["", "[Start Time]: ", "Tue 14 Mar 2023 18:34:04"],
+  Editable->False]], "Print", "Excluded",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->11544962,ExpressionUUID->"d541877e-d5eb-46ab-a558-ead436367a1e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[ End Time ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"Tue 14 Mar 2023 18:34:12\"\>"}],
+  SequenceForm["", "[ End Time ]: ", "Tue 14 Mar 2023 18:34:12"],
+  Editable->False]], "Print", "Excluded",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->138465752,ExpressionUUID->"b850c582-1c03-401f-aa34-e007b236e5c4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[ Duration ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"8.0790059\"\>", 
+   "\[InvisibleSpace]", "\<\" s\"\>"}],
+  SequenceForm["", "[ Duration ]: ", "8.0790059", " s"],
+  Editable->False]], "Print", "Excluded",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->40217651,ExpressionUUID->"167870b8-6e58-4c4b-8f32-1312e5a56629"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[  Result  ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"Compiling internal function cfPosition\"\>"}],
+  SequenceForm["", "[  Result  ]: ", "Compiling internal function cfPosition"],
+  Editable->False]], "Print", "Excluded",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->6257939,ExpressionUUID->"ea86fbda-cadd-4f25-9ba3-a7cadd0635ad"],
+
+Cell[BoxData["\<\"- - - - - - - - - - - - - - - - - - - - - - - - - - - \
+-\\n\"\>"], "Print", "Excluded",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->129724251,ExpressionUUID->"aa92da71-5f82-4c26-a943-fb19e22aa0b9"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Subsection",
+ CellID->462042388,ExpressionUUID->"b1b8f228-4649-4e09-9303-603aa3b25bf3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"<<", "JerryI`Tinyweb`"}]], "Input",
+ CellLabel->"In[25]:=",
+ CellID->232026695,ExpressionUUID->"8dcb28c3-f6e9-47fa-b437-b005a581401e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"\\n- - - - - - - - - - - - - - - - - - - - - - - - - - - \
+-\"\>"], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->40615008,ExpressionUUID->"647108cf-14e6-42f8-87ce-880aa69301e2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[  ACTION  ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"PRE COMPILATION\"\>"}],
+  SequenceForm["", "[  ACTION  ]: ", "PRE COMPILATION"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->586254243,ExpressionUUID->"1d7e86a4-c77c-4105-92cd-014faf55b0f4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[Start Time]: \"\>", 
+   "\[InvisibleSpace]", "\<\"Tue 14 Mar 2023 18:37:41\"\>"}],
+  SequenceForm["", "[Start Time]: ", "Tue 14 Mar 2023 18:37:41"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->108769718,ExpressionUUID->"1c531bb0-c914-4665-9f95-f5b27718c419"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[ End Time ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"Tue 14 Mar 2023 18:37:50\"\>"}],
+  SequenceForm["", "[ End Time ]: ", "Tue 14 Mar 2023 18:37:50"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->586867009,ExpressionUUID->"5f2c2f6d-5733-4a82-ad45-a474c2bb0432"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[ Duration ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"8.5107621\"\>", 
+   "\[InvisibleSpace]", "\<\" s\"\>"}],
+  SequenceForm["", "[ Duration ]: ", "8.5107621", " s"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->482839784,ExpressionUUID->"191ec601-9f5d-40cd-95ed-5f892143d52c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "\<\"[  Result  ]: \"\>", 
+   "\[InvisibleSpace]", "\<\"Compiling internal function cfPosition\"\>"}],
+  SequenceForm["", "[  Result  ]: ", "Compiling internal function cfPosition"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->35761092,ExpressionUUID->"5692b976-8575-4ef4-a42b-07610bab0fdb"],
+
+Cell[BoxData["\<\"- - - - - - - - - - - - - - - - - - - - - - - - - - - \
+-\\n\"\>"], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->84914637,ExpressionUUID->"f3b11c7b-3abb-4b76-aa15-8b645dd58c4d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ByteArrayPosition", "[", 
   RowBox[{
-   RowBox[{"JerryI`Tinyweb`WSHandler`Private`unmask", "[", 
-    RowBox[{",", " ", "payload"}], "]"}], ";"}], "]"}]], "Input",
- CellID->341873444,ExpressionUUID->"87d03666-a106-4f13-b203-73cb44ceb60c"]
+   RowBox[{
+   "StringToByteArray", "[", 
+    "\"\<GET / HTTP/1.1\\r\\nContent-Type: text/html\\r\\n\\r\\n\>\"", "]"}], 
+   ",", " ", 
+   RowBox[{"StringToByteArray", "[", "\"\<\\r\\n\\r\\n\>\"", "]"}], ",", " ", 
+   "1"}], "]"}]], "Input",
+ CellLabel->"In[26]:=",
+ CellID->43112440,ExpressionUUID->"d0b2ff2a-6d36-48e8-a01e-2798d9101bf6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"40", ",", "43"}], "}"}], "}"}]], "Output",
+ CellLabel->"Out[26]=",
+ CellID->102344187,ExpressionUUID->"c0540da7-b561-4f58-b827-769667b7bc45"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ByteArraySplit", "[", 
+  RowBox[{
+   RowBox[{
+   "StringToByteArray", "[", 
+    "\"\<GET / HTTP/1.1\\r\\nContent-Type: text/html\\r\\n\\r\\n\>\"", "]"}], 
+   ",", " ", 
+   RowBox[{
+    RowBox[{"StringToByteArray", "[", "\"\<\\r\\n\\r\\n\>\"", "]"}], " ", 
+    "\[Rule]", " ", "1"}]}], "]"}]], "Input",
+ CellLabel->"In[30]:=",
+ CellID->337483403,ExpressionUUID->"2f117939-ccfc-4702-930a-b0dc86bff0f0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   InterpretationBox[
+    RowBox[{
+     TagBox["ByteArray",
+      "SummaryHead"], "[", 
+     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+      "Ready"}, 
+      TemplateBox[{
+        PaneSelectorBox[{False -> GridBox[{{
+              GridBox[{{
+                 TagBox["\"39 bytes\"", "SummaryItem"]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}], True -> GridBox[{{
+              GridBox[{{
+                 TagBox["\"39 bytes\"", "SummaryItem"]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+       "SummaryPanel"],
+      DynamicModuleValues:>{}], "]"}],
+    ByteArray[{71, 69, 84, 32, 47, 32, 72, 84, 84, 80, 47, 49, 46, 49, 13, 10,
+      67, 111, 110, 116, 101, 110, 116, 45, 84, 121, 112, 101, 58, 32, 116, 
+     101, 120, 116, 47, 104, 116, 109, 108}],
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False], ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellLabel->"Out[30]=",
+ CellID->15873314,ExpressionUUID->"3136f77e-3241-4cab-8432-9204337dc137"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringPosition", "[", 
+  RowBox[{
+  "\"\<GET / HTTP/1.1\\r\\nContent-Type: text/html\\r\\n\\r\\n\>\"", ",", 
+   " ", "\"\<\\r\\n\\r\\n\>\"", ",", " ", "1"}], "]"}]], "Input",
+ CellLabel->"In[33]:=",
+ CellID->419483299,ExpressionUUID->"96dbaaaa-7eab-4932-8b5a-07c27f9e236b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"40", ",", "43"}], "}"}], "}"}]], "Output",
+ CellLabel->"Out[33]=",
+ CellID->146645163,ExpressionUUID->"22c1ef50-bf5b-4c52-a555-e016e4e1306a"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -4510,6 +3617,18 @@ Cell["Source & Additional Information", "Section",
  TaggingRules->{"TemplateGroupName" -> "Source & Additional Information"},
  CellTags->{"Source & Additional Information", "TemplateSection"},
  CellID->871630328,ExpressionUUID->"8b730627-fedb-44c1-ab93-ba9d306ee0f0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"68441", "*", "0.97"}]], "Input",
+ CellLabel->"In[34]:=",
+ CellID->57861050,ExpressionUUID->"f10fa89d-4293-437b-8e8e-35260123a21a"],
+
+Cell[BoxData["66387.77`"], "Output",
+ CellLabel->"Out[34]=",
+ CellID->714342193,ExpressionUUID->"5f933095-4982-4eef-8657-28284ec7125f"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -5472,7 +4591,6 @@ Cell[BoxData[
          StyleBox[
           TemplateBox[{
             CheckboxBox["WebAPI", {False, "WebAPI"}], "\" \"", 
-            
             TemplateBox[{
              "\"WebAPI\"", "\"API called through an HTTP request\""}, 
              "PrettyTooltipTemplate"]},
@@ -6517,8 +5635,8 @@ Cell["Additional information about limitations, issues, etc.", "Text",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{958, 973},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{958, 980},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
 WindowTitle->"Tinyweb | Definition Notebook",
 TaggingRules->{
  "ResourceType" -> "Paclet", "ResourceCreateNotebook" -> True, 

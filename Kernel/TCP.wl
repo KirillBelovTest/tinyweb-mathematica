@@ -61,12 +61,12 @@ CreateType[TCPServer, {
 server_TCPServer[packet_Association] := 
 Module[{client, extendedPacket, message, result}, 
 	client = packet["SourceSocket"]; 
-	extendedPacket = getExtendedPacket[server, client, packet]; 
+	extendedPacket = PrintReturn[getExtendedPacket[server, client, packet], "HANDLE TCP PACKET", "TCP packet received: `1` bytes", #DataLength&]; 
 
 	If[extendedPacket["Completed"], 
-		message = getMessage[server, client, extendedPacket]; 
-		result = invokeHandler[server, client, message]; 
-		sendResponse[server, client, result]; 
+		message = PrintReturn[getMessage[server, client, extendedPacket], "GET MESSAGE", "Completed message length: `1` bytes", Length]; 
+		result = PrintReturn[invokeHandler[server, client, message], "INVOKE MESSAGE HANDLER", "Result length: `1` bytes", ByteCount]; 
+		PrintReturn[sendResponse[server, client, result], "SENDING RESPONSE", "Sending response", ""&]; 
 		clearBuffler[server, client], 
 	(*Else*)
 		savePacketToBuffer[server, client, extendedPacket]

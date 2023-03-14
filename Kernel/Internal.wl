@@ -6,6 +6,10 @@ BeginPackage["JerryI`Tinyweb`Internal`"];
 ClearAll["`*"];
 
 
+PrintReturn::usage = 
+"PrintReturn[code, message, format] print info and return"
+
+
 ConditionApply::usage = 
 "ConditionApply[assoc][args] select rule if key[args] is True and resturn value[args]";
 
@@ -32,6 +36,36 @@ AssocMatchQ[pattern] - function";
 Begin["`Private`"];
 
 
+SetAttributes[PrintReturn, HoldFirst]
+
+
+PrintReturn[code_, action_String, message_String, format_: ToString] := 
+Module[{startTime, endTime, duration, result}, 
+	startTime = AbsoluteTime[]; 
+	
+	Print["\n", $indent, "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"]; 
+	Print[$indent, "[  ACTION  ]: ", action]; 
+	Print[$indent, "[Start Time]: ", DateString[startTime]]; 
+	
+	$indent = $indent <> "\t"; 
+	result = code; 
+	$indent = StringDrop[$indent, -1]; 
+
+	endTime = AbsoluteTime[]; 
+	duration = endTime - startTime; 
+
+	Print[$indent, "[ End Time ]: ", DateString[endTime]]; 
+	Print[$indent, "[ Duration ]: ", ToString[DecimalForm[duration]], " s"]; 
+
+	Print[$indent, "[  Result  ]: ", StringTemplate[message][format[result]]]; 
+
+	Print[$indent, "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n"]; 
+
+	(*Return*)
+	result
+]
+
+
 ConditionApply[conditionAndFunctions: _Association | _List] := 
 Function[Last[SelectFirst[conditionAndFunctions, Function[cf, First[cf][##]]]][##]];
 
@@ -50,15 +84,21 @@ Module[{roundNow = Floor[AbsoluteTime[], period]},
 ]; 
 
 
-ByteArrayPosition[byteArray_ByteArray, subByteArray_ByteArray, n: _Integer?Positive: 1] := 
-cfByteArrayPosition[byteArray, subByteArray, n]; 
+ByteArrayPosition[byteArray_ByteArray, subByteArray_ByteArray, n: _Integer?Positive: 1] /; 
+Length[byteArray] >= 1024 := 
+cfPosition[byteArray, subByteArray, {n}]; 
+
+
+ByteArrayPosition[byteArray_ByteArray, subByteArray_ByteArray, n: _Integer?Positive: 1] /; 
+Length[byteArray] < 1024 := 
+fPosition[byteArray, subByteArray, n]; 
 
 
 ByteArraySplit[byteArray_ByteArray, separator_ByteArray -> n_Integer?Positive] := 
 Module[{position}, 
 	position = ByteArrayPosition[byteArray, separator, n]; 
-	If[position > 0, 
-		{byteArray[[ ;; position - 1]], byteArray[[position + Length[separator] ;; ]]}, 
+	If[Length[position] > 0, 
+		{byteArray[[ ;; position[[1, 1]] - 1]], byteArray[[position[[1, 2]] + 1 ;; ]]}, 
 	(*Else*)
 		{byteArray}
 	]
@@ -77,15 +117,26 @@ AssocMatchQ[request_Association, key__String, test: _String | _StringExpression]
 StringMatchQ[request[key], test, IgnoreCase -> True]
 
 
-AssocMatchQ[request_Association, key: _String | {__String}, test: _Function | _Symbol] := 
+AssocMatchQ[request_Association, key__String, test: _Association] := 
+AssocMatchQ[request[key], test]
+
+
+AssocMatchQ[request_Association, key: _String | {__String}, test: _Function | _Symbol | _[___]] := 
 test[request[key]]
 
 
 (*Internal*)
 
 
-cfPosition = 
-FunctionCompile[Function[{
+$indent = ""
+
+
+fPosition[byteArray_ByteArray, subByteArray_ByteArray, n_Integer] := 
+StringPosition[ByteArrayToString[byteArray], ByteArrayToString[subByteArray], n]
+
+
+cfPosition := cfPosition = 
+PrintReturn[FunctionCompile[Function[{
 	Typed[byteArray, "NumericArray"::["UnsignedInteger8", 1]], 
 	Typed[subByteArray, "NumericArray"::["UnsignedInteger8", 1]], 
 	Typed[n, "PackedArray"::["MachineInteger", 1]]
@@ -107,7 +158,7 @@ FunctionCompile[Function[{
 		(*Return: {{_Integer, _Integer}.., }*)
 		positions
 	]
-]]; 
+]], "PRE COMPILATION", "Compiling internal function cfPosition", ""&]; 
 
 
 (*End private*)

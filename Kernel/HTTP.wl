@@ -108,7 +108,7 @@ CreateType[HTTPHandler, {"Pipeline" -> <||>}];
 
 handler_HTTPHandler[client_SocketObject, message_ByteArray] := 
 Module[{request, pipeline, result}, 
-	request = parseRequest[message]; 
+	request = PrintReturn[parseRequest[message], "HTTP REQUEST PARSING", "Parsing `1`", #&]; 
 	pipeline = handler["Pipeline"]; 
 
 	(*Result: _String | _Association?responseQ*)
