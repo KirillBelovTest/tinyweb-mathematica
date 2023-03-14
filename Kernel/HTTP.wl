@@ -50,10 +50,6 @@ HTTPLength::usage =
 "HTTPLength[client, message] returns expected message length"; 
 
 
-HTTPMatchQ::usage = 
-"HTTPMatchQ[request, pattern] check that request matches with pattern"
-
-
 HTTPHandler::usage = 
 "HTTPHandler[opts] mutable type for the handling HTTP request"; 
 
