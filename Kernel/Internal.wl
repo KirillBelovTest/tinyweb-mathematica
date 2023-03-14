@@ -15,8 +15,18 @@ Cache::usage =
 Cache[expr, period] cache expr for specific period";
 
 
+ByteArrayPosition::usage = 
+"ByteArrayPosition[data, sep, n] n position of sep in data"; 
+
+
 ByteArraySplit::usage = 
-"ByteArraySplit[data, sep -> n] works like TakeDrop[StringSplit[text, sep], n]"
+"ByteArraySplit[data, sep -> n] works like Map[StringJoin, TakeDrop[StringSplit[text, sep], n]]"; 
+
+
+AssociationMatchQ::usage = 
+"AssociationMatchQ[assoc, pattern] match assoc with pattern
+AssociationMatchQ[assoc, key, valuePattern] check key from assoc
+AssociationMatchQ[pattern] - function"; 
 
 
 Begin["`Private`"];
@@ -41,7 +51,7 @@ Module[{roundNow = Floor[AbsoluteTime[], period]},
 
 
 ByteArrayPosition[byteArray_ByteArray, subByteArray_ByteArray, n: _Integer?Positive: 1] := 
-cfByteArrayPosition[byteArray, subByteArray, n]
+cfByteArrayPosition[byteArray, subByteArray, n]; 
 
 
 ByteArraySplit[byteArray_ByteArray, separator_ByteArray -> n_Integer?Positive] := 
@@ -49,12 +59,32 @@ Module[{position},
 	position = ByteArrayPosition[byteArray, separator, n]; 
 	If[position > 0, 
 		{byteArray[[ ;; position - 1]], byteArray[[position + Length[separator] ;; ]]}, 
+	(*Else*)
 		{byteArray}
 	]
-]
+]; 
 
 
-cfByteArrayPosition := cfByteArrayPosition = 
+AssociationMatchQ[assoc_Association, pattern_Association] := 
+Apply[And, KeyValueMap[AssociationMatchQ[assoc, #1, #2]&, pattern]]
+
+
+AssociationMatchQ[pattern_Association] := 
+Function[assoc, AssociationMatchQ[assoc, pattern]]
+
+
+AssociationMatchQ[request_Association, key__String, test: _String | _StringExpression] := 
+StringMatchQ[request[key], test, IgnoreCase -> True]
+
+
+AssociationMatchQ[request_Association, key: _String | {__String}, test: _Function | _Symbol] := 
+test[request[key]]
+
+
+(*Internal*)
+
+
+cfByteArrayPosition = 
 FunctionCompile[Function[{
 	Typed[byteArray, "NumericArray"::["UnsignedInteger8", 1]], 
 	Typed[subByteArray, "NumericArray"::["UnsignedInteger8", 1]], 
@@ -76,10 +106,16 @@ FunctionCompile[Function[{
 		(*Return: _Integer*)
 		position
 	]
-]]
+]]; 
 
 
-End[];
+(*End private*)
+
+
+End[]; 
+
+
+(*End package*)
 
 
 EndPackage[];

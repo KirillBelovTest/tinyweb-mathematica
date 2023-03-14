@@ -6,12 +6,16 @@ PacletDirectoryLoad[Directory[]];
 Get["JerryI`Tinyweb`"]; 
 
 
+importUrlPath[path_String] := 
+Import[FileNameJoin[Flatten[{Directory[], FileNameSplit[path]}]], "String"]
+
+
 http = HTTPHandler[
 	"Pipeline" -> <|
-		"HTML" -> HTTPMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".html"|>] -> Function[#Path <> " HTML page"], 
-		"WSP" -> HTTPMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".wsp"|>] -> Function[#Path <> " WSP page"], 
+		"HTML" -> AssociationMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".html"|>] -> Function[importUrlPath[#Path]], 
+		"WSP" -> AssociationMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".wsp"|>] -> Function[importUrlPath[#Path]], 
 
-		(*to demonstrate signatures*)
+		(*signature*)
 		"Not found" -> Function[assoc, True] -> Function[assoc, <|"Code" -> 404, "Body" -> "Not found"|>]
 	|>
 ]

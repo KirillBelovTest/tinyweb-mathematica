@@ -88,18 +88,6 @@ Module[{head},
 
 
 (* ::Section::Closed:: *)
-(*HTTPMatchQ*)
-
-
-HTTPMatchQ[request_Association, pattern_Association] := 
-And @@ KeyValueMap[requestMatchQ[request, #1, #2]&, pattern]
-
-
-HTTPMatchQ[pattern_Association] := 
-Function[request, HTTPMatchQ[request, pattern]]
-
-
-(* ::Section::Closed:: *)
 (*HTTPLength*)
 
 
@@ -178,14 +166,6 @@ Module[{headBytes, head, headline, headers, body},
 		<|"Headers" -> headers, "Body" -> body|>
 	]
 ]; 
-
-
-requestMatchQ[request_Association, key: _String | {__String}, test: _String | _StringExpression] := 
-StringMatchQ[request[key], test, IgnoreCase -> True]
-
-
-requestMatchQ[request_Association, key: _String | {__String}, test: _Function | _Symbol] := 
-test[request[key]]
 
 
 createResponse[body_String] := 

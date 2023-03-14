@@ -1,5 +1,6 @@
 (* ::Package:: *)
 
+Get["JerryI`Tinyweb`Internal`"]
 Get["JerryI`Tinyweb`TCP`"]
 Get["JerryI`Tinyweb`HTTP`"]
 Get["JerryI`Tinyweb`WS`"]
