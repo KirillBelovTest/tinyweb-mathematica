@@ -72,8 +72,6 @@ Begin["`Private`"];
 HTTPQ[client_SocketObject, message_ByteArray] := 
 Module[{head}, 
 	head = ByteArrayToString[ByteArraySplit[message, $httpEndOfHead -> 1][[1]]]; 
-
-	Print[head];
 	
 	(*Return: True | False*)
 	And[
@@ -156,9 +154,6 @@ Module[{headBytes, head, headline, headers, body},
 		Map[Rule[#1, StringRiffle[{##2}, ":"]]& @@ Map[StringTrim]@StringSplit[#, ":"] &]@
   		StringExtract[head, "\r\n\r\n" -> 1, "\r\n" -> 2 ;; ]
 	]; 
-
-	Print["[HTTP] Parsed headline: \n", headline]; 
-	Print["[HTTP] Parsed headers: \n", headers]; 
 
 	(*Return: _Association*)
 	Join[

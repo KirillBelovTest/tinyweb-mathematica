@@ -16,7 +16,7 @@ http = HTTPHandler[
 		"WSP" -> AssociationMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".wsp"|>] -> Function[importUrlPath[#Path]], 
 		"IMG" -> AssociationMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ {".png", ".jpg"}|>] -> Function[importUrlPath[#Path]], 
 
-		(*signature*)
+		(*Pipeline with signature*)
 		"Not found" -> Function[assoc, True] -> Function[assoc, <|"Code" -> 404, "Body" -> "Not found"|>]
 	|>
 ]

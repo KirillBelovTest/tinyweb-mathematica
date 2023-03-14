@@ -84,8 +84,6 @@ Module[{data, dataLength, buffer, last, expectedLength, storedLength, completed}
 	data = packet["DataByteArray"]; 
 	dataLength = Length[data]; 
 
-	Print["[TCP] Received: ", dataLength, " bytes"]; 
-
 	If[KeyExistsQ[server["Buffer"], uuid] && server["Buffer", uuid]["Length"] > 0, 
 		buffer = server["Buffer", uuid]; 
 		last = buffer["Part", -1]; 
@@ -97,11 +95,6 @@ Module[{data, dataLength, buffer, last, expectedLength, storedLength, completed}
 	]; 
 
 	completed = storedLength + dataLength >= expectedLength; 
-
-	Print["[TCP] Stored: ", storedLength, " bytes"]; 
-	Print["[TCP] Expect: ", expectedLength, " bytes"]; 
-	Print["[TCP] Complete: ", completed]; 
-
 
 	(*Return*)
 	Join[packet, <|
@@ -127,18 +120,18 @@ TCPServer /: invokeHandler[server_TCPServer, client_SocketObject, message_ByteAr
 ConditionApply[server["MessageHandler"]][client, message]
 
 
-TCPServer /: sendResponse[server_TCPServer, client_SocketObject, result: _String | _ByteArray | Null] := (
+TCPServer /: sendResponse[server_TCPServer, client_SocketObject, result: _String | _ByteArray | Null] := 
+Module[{t = AbsoluteTime[]}, 
 	Switch[result, 
-		_String, Print["[TCP] Sent: ", StringLength[result], " bytes"]; WriteString[client, result], 
-		_ByteArray, Print["[TCP] Sent: ", Length[result], " bytes"]; BinaryWrite[client, result], 
-		Null, Print["[TCP] Not sent"]
+		_String, WriteString[client, result], 
+		_ByteArray, BinaryWrite[client, result], 
+		Null, Null
 	]
-); 
+]; 
 
 
 TCPServer /: savePacketToBuffer[server_TCPServer, SocketObject[uuid_String], extendedPacket_Association] := 
 If[KeyExistsQ[server["Buffer"], uuid], 
-	Print["[TCP] Buffering: ", extendedPacket["DataLength"], "bytes"]; 
 	server["Buffer", uuid]["Append", extendedPacket], 
 	server["Buffer", uuid] = CreateDataStructure["DynamicArray", {extendedPacket}]
 ]; 
