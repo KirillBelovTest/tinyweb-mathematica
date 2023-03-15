@@ -134,5 +134,103 @@ http = HTTPHandler["Pipeline" -> <|
 ```
 
 Above `HTTPHandler` is a special type, which is something like a higher-order
-function designed to handle requests. It is a mutable object that uses 
-property `Pipeline` to select a method and call it.  
+function designed to handle requests. It is a mutable object that uses
+property `Pipeline` to select a method and call it. Then we need to define the functions to execute the code and retrieve the page:  
+
+```mathematica
+getPage[request_Association] := 
+Module[{fileName}, 
+    fileName = FileNameJoin[Flatten[{Directory[], FileNameSplit[request["Path"]]}]]; 
+    
+    If[FileExistsQ[fileName] && Not[DirectoryQ[fileName]], 
+        Import[fileName, "String"], 
+    (*Else*)
+        <|"Code" -> 404, "Body" -> "<h1>Not found " <> fileName <> "</h1>"|>
+    ]
+]
+```
+
+```mathematica
+evaluateCode[request_Association] := 
+Module[{result = ToExpression[request["Query", "code"]]}, 
+    Switch[result, 
+        _Graphics, ExportString[result, "SVG"], 
+        _, ExportString[result, "String"]
+    ]
+]
+```
+
+And the last step is to start the server:  
+
+```mathematica
+SocketListen[8000, tcp[#]&]
+```
+
+Let's go to <http://localhost:8000/index.html>  
+
+![Index page not found](./Images/readme-image-1.png)  
+
+Now let's create an *index.html* file in the working directory and insert the following markup:  
+
+```html
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Index page</h1>
+        Created by Kirill Vasin<br/>
+        Powered by Wolfram Language
+    </body>
+</html>
+```
+
+Refresh the page in your browser:  
+
+![Index page](./Images/readme-image-2.png)  
+
+And let's try to call the second method, which is to execute the code.
+To do this we go to the address `http://localhost:8000/?code=Plot[Sin[x],{x,-3,5}]`:  
+
+![Code page](./Images/readme-image-3.png)  
+
+Now let's try to change the logic of the server on the fly.
+Let's create one more request handler:  
+
+```mathematica
+importWSP[request_Association] := 
+Module[{fileName}, 
+    fileName = FileNameJoin[Flatten[{Directory[], FileNameSplit[request["Path"]]}]]; 
+    If[FileExistsQ[fileName] && Not[DirectoryQ[fileName]],
+        StringTemplate[Import[fileName, "String"]][request["Query"]],
+        <|"Code" -> 404, "Body" -> "<h1>Not found " <> fileName <> "</h1>"|>
+    ]
+]
+```
+
+And add it like this:  
+
+```mathematica
+http["Pipeline", "GETWSP"] = 
+    AssocMatchQ[<|"Method" -> "GET", "Path" -> __ ~~ ".wsp"|>] -> 
+        importWSP
+```
+
+Create an *example.wsp* file with the following markup:  
+
+```html
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Example Wolfram Server Page</h1>
+        Created by Kirill Vasin<br/>
+        Powered by Wolfram Language<br/> 
+        Current time is <*Now*><br/> 
+        <font color=`color`>Style of this text changed using query parameter "color"</font>
+    </body>
+</html>
+```
+
+Let's go to <http://localhost:8000/example.wsp?color=red>  
+
+![Index page](./Images/readme-image-4.png)  
