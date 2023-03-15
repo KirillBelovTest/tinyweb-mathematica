@@ -133,4 +133,6 @@ http = HTTPHandler["Pipeline" -> <|
 |>]
 ```
 
-Above `HTTPHandler` is a special type, which is something like a higher-order function designed to handle requests. It is a mutable object that uses property `Pipeline` to select a method and call it.  
+Above `HTTPHandler` is a special type, which is something like a higher-order
+function designed to handle requests. It is a mutable object that uses 
+property `Pipeline` to select a method and call it.  
