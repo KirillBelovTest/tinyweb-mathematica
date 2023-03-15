@@ -6644,19 +6644,39 @@ Cell[BoxData[
  CellLabel->"In[17]:=",
  CellID->294794869,ExpressionUUID->"65db1463-9171-4791-b4cb-f1d27f09cfad"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"http", "[", 
    RowBox[{"\"\<Pipeline\>\"", ",", " ", "\"\<GETWSP\>\""}], "]"}], " ", "=", 
   " ", 
-  RowBox[{"AssocMatchQ", "[", 
-   RowBox[{"<|", 
-    RowBox[{
-     RowBox[{"\"\<Method\>\"", " ", "->", " ", "\"\<GET\>\""}], ",", " ", 
-     RowBox[{"\"\<Path\>\"", " ", "->", " ", 
-      RowBox[{"__", " ", "~~", " ", "\"\<.wsp\>\""}]}]}], "|>"}], 
-   "]"}]}]], "Input",
+  RowBox[{
+   RowBox[{"AssocMatchQ", "[", 
+    RowBox[{"<|", 
+     RowBox[{
+      RowBox[{"\"\<Method\>\"", " ", "->", " ", "\"\<GET\>\""}], ",", " ", 
+      RowBox[{"\"\<Path\>\"", " ", "->", " ", 
+       RowBox[{"__", " ", "~~", " ", "\"\<.wsp\>\""}]}]}], "|>"}], "]"}], "->",
+    "importWSP"}]}]], "Input",
+ CellLabel->"In[20]:=",
  CellID->82801784,ExpressionUUID->"068aaf75-20af-4879-9394-ff16481ad3af"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Function", "[", 
+   RowBox[{"JerryI`Tinyweb`Internal`Private`assoc$", ",", 
+    RowBox[{"AssocMatchQ", "[", 
+     RowBox[{"JerryI`Tinyweb`Internal`Private`assoc$", ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\<\"Method\"\>", "\[Rule]", "\<\"GET\"\>"}], ",", 
+        RowBox[{"\<\"Path\"\>", "\[Rule]", 
+         RowBox[{"__", "~~", "\<\".wsp\"\>"}]}]}], "\[RightAssociation]"}]}], 
+     "]"}]}], "]"}], "\[Rule]", "importWSP"}]], "Output",
+ CellLabel->"Out[20]=",
+ CellID->111603662,ExpressionUUID->"52a84818-8e56-47a4-a169-956e2be11858"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -6828,7 +6848,6 @@ Cell[BoxData[
                     21.188000000000002`}, {52.562, 21.188000000000002`}, {
                     52.562, 8.569}}]}}], 
                    FilledCurveBox[{{
-                    
                     Line[{{49.636, 8.569}, {51.099000000000004`, 8.569}, {
                     51.099000000000004`, 21.188000000000002`}, {49.636, 
                     21.188000000000002`}, {49.636, 8.569}}]}}], 
@@ -7413,6 +7432,46 @@ Cell[BoxData[
   Selectable->False]], "Output",
  CellLabel->"Out[14]=",
  CellID->273619724,ExpressionUUID->"3086a270-6bf1-4e2b-8b6b-421845f901c4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"http", "[", "\"\<Pipeline\>\"", "]"}]], "Input",
+ CellLabel->"In[19]:=",
+ CellID->292479387,ExpressionUUID->"e4c21649-5fd1-44b7-ae9d-e252ed2dddd7"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Page\"\>", "\[Rule]", 
+    RowBox[{
+     RowBox[{"Function", "[", 
+      RowBox[{"JerryI`Tinyweb`Internal`Private`assoc$", ",", 
+       RowBox[{"AssocMatchQ", "[", 
+        RowBox[{"JerryI`Tinyweb`Internal`Private`assoc$", ",", 
+         RowBox[{"\[LeftAssociation]", 
+          RowBox[{
+           RowBox[{"\<\"Method\"\>", "\[Rule]", "\<\"GET\"\>"}], ",", 
+           RowBox[{"\<\"Path\"\>", "\[Rule]", 
+            RowBox[{"__", "~~", "\<\".html\"\>"}]}]}], 
+          "\[RightAssociation]"}]}], "]"}]}], "]"}], "\[Rule]", "getPage"}]}],
+    ",", 
+   RowBox[{"\<\"Evaluate\"\>", "\[Rule]", 
+    RowBox[{
+     RowBox[{"Function", "[", 
+      RowBox[{"JerryI`Tinyweb`Internal`Private`assoc$", ",", 
+       RowBox[{"AssocMatchQ", "[", 
+        RowBox[{"JerryI`Tinyweb`Internal`Private`assoc$", ",", 
+         RowBox[{"\[LeftAssociation]", 
+          RowBox[{
+           RowBox[{"\<\"Method\"\>", "\[Rule]", "\<\"GET\"\>"}], ",", 
+           RowBox[{"\<\"Query\"\>", "\[Rule]", 
+            RowBox[{"KeyExistsQ", "[", "\<\"code\"\>", "]"}]}]}], 
+          "\[RightAssociation]"}]}], "]"}]}], "]"}], "\[Rule]", 
+     "evaluateCode"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[19]=",
+ CellID->213744273,ExpressionUUID->"94eb0445-f86b-417f-99b7-c666883b6e3f"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -9193,8 +9252,8 @@ the following:\n\[FilledSmallSquare] Modifies OS settings\n\
                    FrameMargins -> 20, FrameStyle -> GrayLevel[0.9], 
                    RoundingRadius -> 5, ImageSize -> {
                     Scaled[0.65], Automatic}]], "MoreInfoText", Deletable -> 
-                 True, CellTags -> {
-                  "SectionMoreInfoDisclosuresOSConfiguration"}, 
+                 True, 
+                 CellTags -> {"SectionMoreInfoDisclosuresOSConfiguration"}, 
                  CellMargins -> {{66, 66}, {15, 15}}], 
                 HoldComplete[
                  EvaluationCell[]], "Click for more information"}, 
