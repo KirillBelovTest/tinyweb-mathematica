@@ -189,7 +189,7 @@ Refresh the page in your browser:
 ![Index page](./Images/readme-image-2.png)  
 
 And let's try to call the second method, which is to execute the code.
-To do this we go to the address `http://localhost:8000/?code=Plot[Sin[x],{x,-3,5}]`:  
+To do this we go to the address <http://localhost:8000/?code=Plot[Sin[x],{x,-3,5}]>:  
 
 ![Code page](./Images/readme-image-3.png)  
 
