@@ -15,15 +15,17 @@ ws = WSHandler[
 
 tcp = TCPServer[
 	"CompleteHandler" -> <|
-		"WS" -> WSQ -> WSLength
+		"WS" -> WSQ -> WSLength, 
+		"Error" > Function[Print["Erro"]; True] -> Function[Length[#2]]
 	|>, 
 	"MessageHandler" -> <|
-		"WS" -> WSQ -> ws
+		"WS" -> WSQ -> ws, 
+		"Error" -> Function[True] -> Function[Close[#2]]
 	|>
 ]
 
 
-SocketListen[8090, Function[tcp[#]]]
+SocketListen[8000, Function[tcp[#]]]
 
 
 While[True, Pause[0.001]]

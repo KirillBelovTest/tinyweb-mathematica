@@ -62,8 +62,8 @@ WSHandler::usage =
 Begin["`Private`"]; 
 
 
-WSQ[client_SocketObject, message_ByteArray] := 
-frameQ[client, message] || handshakeQ[client, message];  
+WSQ[client_SocketObject, message_ByteArray] :=  
+frameQ[client, message] || handshakeQ[client, message]; 
 
 
 WSLength[client_SocketObject, message_ByteArray] := 
@@ -131,9 +131,9 @@ Module[{head},
 	(*Else*)
 		head = ByteArrayToString[ByteArraySplit[message, $httpEndOfHead -> 1][[1]]]; 
 	
+		Length[message] != StringLength[head] && 
 		StringContainsQ[head, StartOfString ~~ "GET /"] && 
-		StringContainsQ[head, StartOfLine ~~ "Upgrade: websocket"] && 
-		StringContainsQ[head, "\r\n\r\n"]
+		StringContainsQ[head, StartOfLine ~~ "Upgrade: websocket"]
 	]
 ]; 
 
@@ -247,7 +247,7 @@ Module[{byte1, byte2, fin, opcode, mask, len, maskingKey, nextPosition, payload,
 	]; 
 
 	If[mask, 
-		maskingKey = message[[nextPosition ;; nextPosition + 4]]; nextPosition = nextPosition + 4, 
+		maskingKey = message[[nextPosition ;; nextPosition + 3]]; nextPosition = nextPosition + 4, 
 		maskingKey = {}
 	]; 
 
