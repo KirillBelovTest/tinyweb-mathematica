@@ -3,7 +3,11 @@
 BeginPackage["JerryI`Tinyweb`Internal`"];
 
 
-ClearAll["`*"];
+ClearAll["`*"]; 
+
+
+PreCompile::usage = 
+"PreCompile[name, func] load if library exists and compliling if not"
 
 
 PrintReturn::usage = 
@@ -125,40 +129,62 @@ AssocMatchQ[request_Association, key: _String | {__String}, test: _Function | _S
 test[request[key]]
 
 
+SetAttributes[PreCompile, HoldRest]
+
+
+PreCompile[name_String, func_FunctionCompile] := 
+Module[{lib = FileNameJoin[{$lLibraryResources, name <> "." <> Internal`DynamicLibraryExtension[]}]}, 
+	If[
+		FileExistsQ[lib], 
+			LibraryFunctionLoad[lib], 
+		(*Else*)
+			LibraryFunctionLoad[FunctionCompileExportLibrary[lib, func]]
+	]
+]
+
+
 (*Internal*)
 
 
-$indent = ""
+$indent = ""; 
+
+
+$lLibraryResources = FileNameJoin[{
+	DirectoryName[$InputFileName, 2], 
+	"LibraryResources", 
+	$SystemID
+}]
 
 
 fPosition[byteArray_ByteArray, subByteArray_ByteArray, n_Integer] := 
-StringPosition[ByteArrayToString[byteArray], ByteArrayToString[subByteArray], n]
+StringPosition[ByteArrayToString[byteArray], ByteArrayToString[subByteArray], n]; 
 
 
-cfPosition := cfPosition = 
-PrintReturn[FunctionCompile[Function[{
-	Typed[byteArray, "NumericArray"::["UnsignedInteger8", 1]], 
-	Typed[subByteArray, "NumericArray"::["UnsignedInteger8", 1]], 
-	Typed[n, "PackedArray"::["MachineInteger", 1]]
-}, 
-	Module[{m = 0, j = 1, len = Length[subByteArray], positions = {}},
-		Do[
-			If[
-				byteArray[[i ;; i + len - 1]] === subByteArray, 
-					m++; 
-					If[m === n[[j]], 
-						j++; 
-						positions = Append[positions, {i, i + len - 1}];  
-						If[j == Length[n], Break[]]
-					]
-			], 
-			{i, 1, Length[byteArray] - len + 1}
-		]; 
-		
-		(*Return: {{_Integer, _Integer}.., }*)
-		positions
-	]
-]], "PRE COMPILATION", "Compiling internal function cfPosition", ""&]; 
+cfPosition := cfPosition = PreCompile["cfPosition", 
+	FunctionCompile[Function[{
+		Typed[byteArray, "NumericArray"::["UnsignedInteger8", 1]], 
+		Typed[subByteArray, "NumericArray"::["UnsignedInteger8", 1]], 
+		Typed[n, "PackedArray"::["MachineInteger", 1]]
+	}, 
+		Module[{m = 0, j = 1, len = Length[subByteArray], positions = {}},
+			Do[
+				If[
+					byteArray[[i ;; i + len - 1]] === subByteArray, 
+						m++; 
+						If[m === n[[j]], 
+							j++; 
+							positions = Append[positions, {i, i + len - 1}];  
+							If[j == Length[n], Break[]]
+						]
+				], 
+				{i, 1, Length[byteArray] - len + 1}
+			]; 
+
+			(*Return: {{_Integer, _Integer}.., }*)
+			positions
+		]
+	]]
+]; 
 
 
 (*End private*)

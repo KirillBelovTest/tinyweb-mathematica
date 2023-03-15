@@ -3310,7 +3310,7 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"$HistoryLength", " ", "=", " ", "0"}], ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[2]:=",
+ CellLabel->"In[1]:=",
  CellID->271262706,ExpressionUUID->"7e2b875b-6c2e-4bec-bea4-5fd3501da985"],
 
 Cell[BoxData[
@@ -3318,7 +3318,7 @@ Cell[BoxData[
   RowBox[{"SetDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[3]:=",
+ CellLabel->"In[2]:=",
  CellID->793481494,ExpressionUUID->"0938cda3-e82b-49e8-87a5-d3c08a93b805"],
 
 Cell[BoxData[
@@ -3326,7 +3326,7 @@ Cell[BoxData[
   RowBox[{"PacletDirectoryLoad", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[4]:=",
+ CellLabel->"In[3]:=",
  CellID->996717066,ExpressionUUID->"dc3ffea7-7c9c-4fd7-937f-b87baef4ef31"],
 
 Cell[BoxData[
@@ -3334,8 +3334,607 @@ Cell[BoxData[
   RowBox[{"Get", "[", "\"\<JerryI`Tinyweb`\>\"", "]"}], 
   ";"}]], "Input", "Excluded",
  InitializationCell->True,
- CellLabel->"In[5]:=",
+ CellLabel->"In[4]:=",
  CellID->172764492,ExpressionUUID->"daa46fa9-aa49-4f86-b934-0632a26ded25"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Compiling", "Subsection",
+ CellID->67589489,ExpressionUUID->"e33aad6b-748b-40c4-b56c-ad573caeb41c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"1", "+", "1"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->470518766,ExpressionUUID->"30c3a554-f2f7-4059-bd30-01ba609abc79"],
+
+Cell[BoxData["2"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->92141131,ExpressionUUID->"6ca1f25c-423a-49bc-8d1a-b52f8810f0a2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["JerryI`Tinyweb`Internal`Private`cfPosition"], "Input",
+ CellLabel->"In[7]:=",
+ CellID->632127863,ExpressionUUID->"995c133e-9bbd-45d2-a119-684dc65e759c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["CompiledCodeFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
+                False], TraditionalForm], {0, 0}], Background -> 
+             GrayLevel[0.93], Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}]}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{"\"ListVector\"", "::[", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
+                False], TraditionalForm], {0, 0}], Background -> 
+             GrayLevel[0.93], Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}]}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{"\"ListVector\"", "::[", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  CompiledCodeFunction[<|"Signature" -> TypeSpecifier[{
+        "NumericArray"["UnsignedInteger8", 
+         LiteralType[1, "Integer64"]], 
+        "NumericArray"["UnsignedInteger8", 
+         LiteralType[1, "Integer64"]], 
+        "PackedArray"["Integer64", 
+         LiteralType[1, "Integer64"]]} -> "ListVector"[
+        "PackedArray"["Integer64", 
+         LiteralType[1, "Integer64"]]]], "ErrorFunction" -> Automatic, 
+    "LoadedFunction" -> 
+    LibraryFunction[
+     "C:\\Users\\Kirill\\Projects\\tinyweb-mathematica\\LibraryResources\\\
+Windows-x86-64\\cfPosition.dll", "Main_Pointer", {}, Integer], "FunctionName" -> 
+    "Main", "LibraryPath" -> 
+    "C:\\Users\\Kirill\\Projects\\tinyweb-mathematica\\LibraryResources\\\
+Windows-x86-64\\cfPosition.dll", "VersionData" -> {13.200000000000001`, 0, 0},
+     "SystemID" -> "Windows-x86-64", "Input" -> Compile`Program[{}, 
+      Function[{
+        Typed[JerryI`Tinyweb`Internal`Private`byteArray, 
+         TypeSpecifier["NumericArray"]["UnsignedInteger8", 1]], 
+        Typed[JerryI`Tinyweb`Internal`Private`subByteArray, 
+         TypeSpecifier["NumericArray"]["UnsignedInteger8", 1]], 
+        Typed[JerryI`Tinyweb`Internal`Private`n, 
+         TypeSpecifier["PackedArray"]["MachineInteger", 1]]}, 
+       Module[{
+        JerryI`Tinyweb`Internal`Private`m = 0, 
+         JerryI`Tinyweb`Internal`Private`j = 1, 
+         JerryI`Tinyweb`Internal`Private`len = 
+         Length[JerryI`Tinyweb`Internal`Private`subByteArray], 
+         JerryI`Tinyweb`Internal`Private`positions = {}}, Do[
+          If[Part[JerryI`Tinyweb`Internal`Private`byteArray, 
+             Span[
+             JerryI`Tinyweb`Internal`Private`i, 
+              JerryI`Tinyweb`Internal`Private`i + 
+              JerryI`Tinyweb`Internal`Private`len - 1]] === 
+           JerryI`Tinyweb`Internal`Private`subByteArray, 
+           Increment[JerryI`Tinyweb`Internal`Private`m]; 
+           If[JerryI`Tinyweb`Internal`Private`m === 
+             Part[JerryI`Tinyweb`Internal`Private`n, 
+               JerryI`Tinyweb`Internal`Private`j], 
+             Increment[JerryI`Tinyweb`Internal`Private`j]; 
+             JerryI`Tinyweb`Internal`Private`positions = 
+              Append[JerryI`Tinyweb`Internal`Private`positions, {
+                JerryI`Tinyweb`Internal`Private`i, 
+                 JerryI`Tinyweb`Internal`Private`i + 
+                 JerryI`Tinyweb`Internal`Private`len - 1}]; 
+             If[JerryI`Tinyweb`Internal`Private`j == 
+               Length[JerryI`Tinyweb`Internal`Private`n], 
+               Break[]]]], {
+          JerryI`Tinyweb`Internal`Private`i, 1, 
+           Length[JerryI`Tinyweb`Internal`Private`byteArray] - 
+           JerryI`Tinyweb`Internal`Private`len + 1}]; 
+        JerryI`Tinyweb`Internal`Private`positions]]]|>, 140723558557568, 
+   140723558557328, 140723558557472, 140723558551552, 
+   "{\"NumericArray\"[\"UnsignedInteger8\", LiteralType[1, \"Integer64\"]], \
+\"NumericArray\"[\"UnsignedInteger8\", LiteralType[1, \"Integer64\"]], \
+\"PackedArray\"[\"Integer64\", LiteralType[1, \"Integer64\"]]} -> \
+\"ListVector\"[\"PackedArray\"[\"Integer64\", LiteralType[1, \
+\"Integer64\"]]]"],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->77111421,ExpressionUUID->"f58cd4c2-508a-4d92-bc13-271f6ed5d6a6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"x", "=", "1"}]], "Input",
+ CellLabel->"In[8]:=",
+ CellID->25698315,ExpressionUUID->"103189ad-720b-4c8a-a23d-4fad7ff1bf94"],
+
+Cell[BoxData["1"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->103642713,ExpressionUUID->"2d3a42ad-e082-450c-9ff8-9870b92e96a1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SymbolName", "[", 
+  RowBox[{"Unevaluated", "[", "x", "]"}], "]"}]], "Input",
+ CellLabel->"In[12]:=",
+ CellID->563357077,ExpressionUUID->"a0c49286-0565-4619-a71e-de2a3ec368b3"],
+
+Cell[BoxData["\<\"x\"\>"], "Output",
+ CellLabel->"Out[12]=",
+ CellID->104004178,ExpressionUUID->"64e9303d-f028-4656-82be-8a154d00c18a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LibraryFunctionLoad", "[", 
+  "\"\<C:\\\\Users\\\\Kirill\\\\Projects\\\\tinyweb-mathematica\\\\\
+LibraryResources\\\\Windows-x86-64\\\\cfPosition.dll\>\"", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->118088410,ExpressionUUID->"72a2a970-c507-4ae8-8784-e10bd6c3364b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["CompiledCodeFunction",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
+                False], TraditionalForm], {0, 0}], Background -> 
+             GrayLevel[0.93], Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}]}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{"\"ListVector\"", "::[", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[
+             InsetBox[
+              FormBox[
+               StyleBox["\"Code\"", 
+                GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
+                False], TraditionalForm], {0, 0}], Background -> 
+             GrayLevel[0.93], Axes -> False, AspectRatio -> 1, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}, ImageSizeCache -> {27., {0., 10.}}], Frame -> 
+             True, FrameTicks -> None, FrameStyle -> Directive[
+               Thickness[Tiny], 
+               GrayLevel[0.55]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}]}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{"\"ListVector\"", "::[", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}], "]"}]}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  CompiledCodeFunction[<|"Signature" -> TypeSpecifier[{
+        "NumericArray"["UnsignedInteger8", 
+         LiteralType[1, "Integer64"]], 
+        "NumericArray"["UnsignedInteger8", 
+         LiteralType[1, "Integer64"]], 
+        "PackedArray"["Integer64", 
+         LiteralType[1, "Integer64"]]} -> "ListVector"[
+        "PackedArray"["Integer64", 
+         LiteralType[1, "Integer64"]]]], "ErrorFunction" -> Automatic, 
+    "LoadedFunction" -> 
+    LibraryFunction[
+     "C:\\Users\\Kirill\\Projects\\tinyweb-mathematica\\LibraryResources\\\
+Windows-x86-64\\cfPosition.dll", "Main_Pointer", {}, Integer], "FunctionName" -> 
+    "Main", "LibraryPath" -> 
+    "C:\\Users\\Kirill\\Projects\\tinyweb-mathematica\\LibraryResources\\\
+Windows-x86-64\\cfPosition.dll", "VersionData" -> {13.200000000000001`, 0, 0},
+     "SystemID" -> "Windows-x86-64", "Input" -> Compile`Program[{}, 
+      Function[{
+        Typed[JerryI`Tinyweb`Internal`Private`byteArray, 
+         TypeSpecifier["NumericArray"]["UnsignedInteger8", 1]], 
+        Typed[JerryI`Tinyweb`Internal`Private`subByteArray, 
+         TypeSpecifier["NumericArray"]["UnsignedInteger8", 1]], 
+        Typed[JerryI`Tinyweb`Internal`Private`n, 
+         TypeSpecifier["PackedArray"]["MachineInteger", 1]]}, 
+       Module[{
+        JerryI`Tinyweb`Internal`Private`m = 0, 
+         JerryI`Tinyweb`Internal`Private`j = 1, 
+         JerryI`Tinyweb`Internal`Private`len = 
+         Length[JerryI`Tinyweb`Internal`Private`subByteArray], 
+         JerryI`Tinyweb`Internal`Private`positions = {}}, Do[
+          If[Part[JerryI`Tinyweb`Internal`Private`byteArray, 
+             Span[
+             JerryI`Tinyweb`Internal`Private`i, 
+              JerryI`Tinyweb`Internal`Private`i + 
+              JerryI`Tinyweb`Internal`Private`len - 1]] === 
+           JerryI`Tinyweb`Internal`Private`subByteArray, 
+           Increment[JerryI`Tinyweb`Internal`Private`m]; 
+           If[JerryI`Tinyweb`Internal`Private`m === 
+             Part[JerryI`Tinyweb`Internal`Private`n, 
+               JerryI`Tinyweb`Internal`Private`j], 
+             Increment[JerryI`Tinyweb`Internal`Private`j]; 
+             JerryI`Tinyweb`Internal`Private`positions = 
+              Append[JerryI`Tinyweb`Internal`Private`positions, {
+                JerryI`Tinyweb`Internal`Private`i, 
+                 JerryI`Tinyweb`Internal`Private`i + 
+                 JerryI`Tinyweb`Internal`Private`len - 1}]; 
+             If[JerryI`Tinyweb`Internal`Private`j == 
+               Length[JerryI`Tinyweb`Internal`Private`n], 
+               Break[]]]], {
+          JerryI`Tinyweb`Internal`Private`i, 1, 
+           Length[JerryI`Tinyweb`Internal`Private`byteArray] - 
+           JerryI`Tinyweb`Internal`Private`len + 1}]; 
+        JerryI`Tinyweb`Internal`Private`positions]]]|>, 140723743500160, 
+   140723743499920, 140723743500064, 140723743494144, 
+   "{\"NumericArray\"[\"UnsignedInteger8\", LiteralType[1, \"Integer64\"]], \
+\"NumericArray\"[\"UnsignedInteger8\", LiteralType[1, \"Integer64\"]], \
+\"PackedArray\"[\"Integer64\", LiteralType[1, \"Integer64\"]]} -> \
+\"ListVector\"[\"PackedArray\"[\"Integer64\", LiteralType[1, \
+\"Integer64\"]]]"],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->399090471,ExpressionUUID->"24178aaf-c371-4150-9151-ac7b3baa6cce"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FunctionCompileExportLibrary", "[", 
+  RowBox[{
+  "\"\<C:\\\\Users\\\\Kirill\\\\Projects\\\\tinyweb-mathematica\\\\\
+LibraryResources\\\\Windows-x86-64\\\\cfPosition2.dll\>\"", ",", " ", 
+   RowBox[{
+   "LibraryFunctionLoad", "[", 
+    "\"\<C:\\\\Users\\\\Kirill\\\\Projects\\\\tinyweb-mathematica\\\\\
+LibraryResources\\\\Windows-x86-64\\\\cfPosition.dll\>\"", "]"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->292510965,ExpressionUUID->"257502bd-0dd5-4618-a9c5-b7783eeb7be6"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Kirill\\\\Projects\\\\tinyweb-mathematica\\\\\
+LibraryResources\\\\Windows-x86-64\\\\cfPosition2.dll\"\>"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->264874098,ExpressionUUID->"6c422014-1905-4691-afac-2a03e2f45386"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AbsoluteTiming", "[", "JerryI`Tinyweb`Internal`Private`cfPosition", 
+  "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->799541890,ExpressionUUID->"f1d7b705-a7f1-4d21-9226-eb495035320b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2.3`*^-6", ",", 
+   InterpretationBox[
+    RowBox[{
+     TagBox["CompiledCodeFunction",
+      "SummaryHead"], "[", 
+     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+      "Ready"}, 
+      TemplateBox[{
+        PaneSelectorBox[{False -> GridBox[{{
+              GraphicsBox[
+               InsetBox[
+                FormBox[
+                 StyleBox["\"Code\"", 
+                  GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
+                  False], TraditionalForm], {0, 0}], Background -> 
+               GrayLevel[0.93], Axes -> False, AspectRatio -> 1, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
+               Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
+                 Thickness[Tiny], 
+                 GrayLevel[0.55]]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}]}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{"\"ListVector\"", "::[", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}], "]"}]}], 
+                    "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}], True -> GridBox[{{
+              GraphicsBox[
+               InsetBox[
+                FormBox[
+                 StyleBox["\"Code\"", 
+                  GrayLevel[0.7], Bold, 8.35684759205385, StripOnInput -> 
+                  False], TraditionalForm], {0, 0}], Background -> 
+               GrayLevel[0.93], Axes -> False, AspectRatio -> 1, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}, ImageSizeCache -> {27., {0., 10.}}], 
+               Frame -> True, FrameTicks -> None, FrameStyle -> Directive[
+                 Thickness[Tiny], 
+                 GrayLevel[0.55]]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Signature: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"NumericArray\"", "::[", 
+                    RowBox[{"\"UnsignedInteger8\"", ",", "1"}], "]"}], ",", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}]}], "}"}], 
+                    "\[Rule]", 
+                    RowBox[{"\"ListVector\"", "::[", 
+                    RowBox[{"\"PackedArray\"", "::[", 
+                    RowBox[{"\"Integer64\"", ",", "1"}], "]"}], "]"}]}], 
+                    "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+       "SummaryPanel"],
+      DynamicModuleValues:>{}], "]"}],
+    CompiledCodeFunction[<|"Signature" -> TypeSpecifier[{
+          "NumericArray"["UnsignedInteger8", 
+           LiteralType[1, "Integer64"]], 
+          "NumericArray"["UnsignedInteger8", 
+           LiteralType[1, "Integer64"]], 
+          "PackedArray"["Integer64", 
+           LiteralType[1, "Integer64"]]} -> "ListVector"[
+          "PackedArray"["Integer64", 
+           LiteralType[1, "Integer64"]]]], "ErrorFunction" -> Automatic, 
+      "LoadedFunction" -> 
+      LibraryFunction[
+       "C:\\Users\\Kirill\\Projects\\tinyweb-mathematica\\LibraryResources\\\
+Windows-x86-64\\cfPosition.dll", "Main_Pointer", {}, Integer], "FunctionName" -> 
+      "Main", "LibraryPath" -> 
+      "C:\\Users\\Kirill\\Projects\\tinyweb-mathematica\\LibraryResources\\\
+Windows-x86-64\\cfPosition.dll", "VersionData" -> {13.200000000000001`, 0, 0},
+       "SystemID" -> "Windows-x86-64", "Input" -> Compile`Program[{}, 
+        Function[{
+          Typed[JerryI`Tinyweb`Internal`Private`byteArray, 
+           TypeSpecifier["NumericArray"]["UnsignedInteger8", 1]], 
+          Typed[JerryI`Tinyweb`Internal`Private`subByteArray, 
+           TypeSpecifier["NumericArray"]["UnsignedInteger8", 1]], 
+          Typed[JerryI`Tinyweb`Internal`Private`n, 
+           TypeSpecifier["PackedArray"]["MachineInteger", 1]]}, 
+         Module[{
+          JerryI`Tinyweb`Internal`Private`m = 0, 
+           JerryI`Tinyweb`Internal`Private`j = 1, 
+           JerryI`Tinyweb`Internal`Private`len = 
+           Length[JerryI`Tinyweb`Internal`Private`subByteArray], 
+           JerryI`Tinyweb`Internal`Private`positions = {}}, Do[
+            If[Part[JerryI`Tinyweb`Internal`Private`byteArray, 
+               Span[
+               JerryI`Tinyweb`Internal`Private`i, 
+                JerryI`Tinyweb`Internal`Private`i + 
+                JerryI`Tinyweb`Internal`Private`len - 1]] === 
+             JerryI`Tinyweb`Internal`Private`subByteArray, 
+             Increment[JerryI`Tinyweb`Internal`Private`m]; 
+             If[JerryI`Tinyweb`Internal`Private`m === 
+               Part[JerryI`Tinyweb`Internal`Private`n, 
+                 JerryI`Tinyweb`Internal`Private`j], 
+               Increment[JerryI`Tinyweb`Internal`Private`j]; 
+               JerryI`Tinyweb`Internal`Private`positions = 
+                Append[JerryI`Tinyweb`Internal`Private`positions, {
+                  JerryI`Tinyweb`Internal`Private`i, 
+                   JerryI`Tinyweb`Internal`Private`i + 
+                   JerryI`Tinyweb`Internal`Private`len - 1}]; 
+               If[JerryI`Tinyweb`Internal`Private`j == 
+                 Length[JerryI`Tinyweb`Internal`Private`n], 
+                 Break[]]]], {
+            JerryI`Tinyweb`Internal`Private`i, 1, 
+             Length[JerryI`Tinyweb`Internal`Private`byteArray] - 
+             JerryI`Tinyweb`Internal`Private`len + 1}]; 
+          JerryI`Tinyweb`Internal`Private`positions]]]|>, 140723554101120, 
+     140723554100880, 140723554101024, 140723554095104, 
+     "{\"NumericArray\"[\"UnsignedInteger8\", LiteralType[1, \"Integer64\"]], \
+\"NumericArray\"[\"UnsignedInteger8\", LiteralType[1, \"Integer64\"]], \
+\"PackedArray\"[\"Integer64\", LiteralType[1, \"Integer64\"]]} -> \
+\"ListVector\"[\"PackedArray\"[\"Integer64\", LiteralType[1, \
+\"Integer64\"]]]"],
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False]}], "}"}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->79688197,ExpressionUUID->"e112497d-26b1-4488-8af3-3d27d038f4c0"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4117,7 +4716,6 @@ D/wb9eUvvg==
                  "\[InvisibleSpace]", 
                  TagBox[
                   RowBox[{"{", 
-                    
                     RowBox[{
                     "\"Icon\"", ",", "\"Init\"", ",", "\"Buffer\"", ",", 
                     "\"CompleteHandler\"", ",", "\"MessageHandler\"", ",", 
@@ -4880,7 +5478,6 @@ D/wb9eUvvg==
                  "\[InvisibleSpace]", 
                  TagBox[
                   RowBox[{"{", 
-                    
                     RowBox[{
                     "\"Icon\"", ",", "\"Init\"", ",", "\"Buffer\"", ",", 
                     "\"CompleteHandler\"", ",", "\"MessageHandler\"", ",", 
@@ -6848,6 +7445,7 @@ Cell[BoxData[
                     21.188000000000002`}, {52.562, 21.188000000000002`}, {
                     52.562, 8.569}}]}}], 
                    FilledCurveBox[{{
+                    
                     Line[{{49.636, 8.569}, {51.099000000000004`, 8.569}, {
                     51.099000000000004`, 21.188000000000002`}, {49.636, 
                     21.188000000000002`}, {49.636, 8.569}}]}}], 
@@ -8846,8 +9444,8 @@ WolframAlpha calls", "MoreInfoText"], Background -> GrayLevel[0.95],
                    RoundingRadius -> 5, ImageSize -> {
                     Scaled[0.65], Automatic}]], "MoreInfoText", Deletable -> 
                  True, CellTags -> {
-                  "SectionMoreInfoDisclosuresWolframAccount"}, 
-                 CellMargins -> {{66, 66}, {15, 15}}], 
+                  "SectionMoreInfoDisclosuresWolframAccount"}, CellMargins -> 
+                 {{66, 66}, {15, 15}}], 
                 HoldComplete[
                  EvaluationCell[]], "Click for more information"}, 
                "InlineMoreInfoOpenerButtonTemplate"]}, "RowDefault"]},
@@ -9252,8 +9850,8 @@ the following:\n\[FilledSmallSquare] Modifies OS settings\n\
                    FrameMargins -> 20, FrameStyle -> GrayLevel[0.9], 
                    RoundingRadius -> 5, ImageSize -> {
                     Scaled[0.65], Automatic}]], "MoreInfoText", Deletable -> 
-                 True, 
-                 CellTags -> {"SectionMoreInfoDisclosuresOSConfiguration"}, 
+                 True, CellTags -> {
+                  "SectionMoreInfoDisclosuresOSConfiguration"}, 
                  CellMargins -> {{66, 66}, {15, 15}}], 
                 HoldComplete[
                  EvaluationCell[]], "Click for more information"}, 

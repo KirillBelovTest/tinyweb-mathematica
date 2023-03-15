@@ -40,23 +40,19 @@ BeginPackage["JerryI`Tinyweb`WS`", {"JerryI`Tinyweb`Internal`", "KirillBelov`Obj
 (*Names*)
 
 
-ClearAll["`*"]
+ClearAll["`*"]; 
 
 
 WSQ::usage = 
-"WSHandshakeQ[client, message] check that message sent via WebSocket protocol"
+"WSHandshakeQ[client, message] check that message sent via WebSocket protocol"; 
 
 
 WSLength::usage = 
-"WSLength[client, message] get expected message length"
+"WSLength[client, message] get expected message length"; 
 
 
 WSHandler::usage = 
-"WSHandler[opts] handle messages received via WS protocol"
-
-
-WSSender::usage = 
-"WSSender"
+"WSHandler[opts] handle messages received via WS protocol"; 
 
 
 (*::Section::Close::*)
@@ -67,13 +63,7 @@ Begin["`Private`"];
 
 
 WSQ[client_SocketObject, message_ByteArray] := 
-Module[{result}, 
-	result = frameQ[client, message] || handshakeQ[client, message]; 
-	If[result, Print["[WS] Selected protocol"]]; 
-
-	(*Return*)
-	result
-]; 
+frameQ[client, message] || handshakeQ[client, message];  
 
 
 WSLength[client_SocketObject, message_ByteArray] := 
@@ -129,18 +119,21 @@ $guid = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
 $connections = {}; 
 
 
+$httpEndOfHead = StringToByteArray["\r\n\r\n"]; 
+
+
 handshakeQ[client_SocketObject, message_ByteArray] := 
-Module[{messageString}, 
+Module[{head}, 
 
 	(*Return: True | False*)
 	If[frameQ[client, message], 
 		False, 
 	(*Else*)
-		messageString = ByteArrayToString[message]; 
+		head = ByteArrayToString[ByteArraySplit[message, $httpEndOfHead -> 1][[1]]]; 
 	
-		StringContainsQ[messageString, StartOfString ~~ "GET /"] && 
-		StringContainsQ[messageString, StartOfLine ~~ "Upgrade: websocket"] && 
-		StringContainsQ[messageString, "\r\n\r\n"]
+		StringContainsQ[head, StartOfString ~~ "GET /"] && 
+		StringContainsQ[head, StartOfLine ~~ "Upgrade: websocket"] && 
+		StringContainsQ[head, "\r\n\r\n"]
 	]
 ]; 
 
@@ -270,14 +263,14 @@ Module[{byte1, byte2, fin, opcode, mask, len, maskingKey, nextPosition, payload,
 ]; 
 
 
-unmask := unmask = FunctionCompile[
-	Function[{
+unmask := unmask = PreCompile["unmask", 
+	FunctionCompile[Function[{
 		Typed[maskingKey, "NumericArray"::["MachineInteger", 1]], 
 		Typed[payload, "NumericArray"::["MachineInteger", 1]]
 	}, 
 		(*Return: PacketArray::[MachineInteger, 1]*)
 		Table[BitXor[payload[[i]], maskingKey[[Mod[i - 1, 4] + 1]]], {i, 1, Length[payload]}]
-	]
+	]]
 ]
 
 
