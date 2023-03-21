@@ -106,8 +106,8 @@ Module[{head},
 CreateType[HTTPHandler, {
 	"Pipeline" -> <||>, 
 	"Default" -> Function[$errorResponse], 
-	"Deserializers" -> deserializers, 
-	"Serializers" -> serializers
+	"Deserializers" -> $deserializers, 
+	"Serializers" -> $serializers
 }]; 
 
 
@@ -145,6 +145,9 @@ $deserializers = <|
 		Function[AssocMatchQ[#1, <|"Content-Type" -> "application/x-www-form-urlencoded"|>] -> 
 			Function[Association[URLQueryDecode[#2]]]]
 |>; 
+
+
+$serializers = ToString
 
 
 parseRequest[message_ByteArray, deserializers_Association] := 
@@ -186,8 +189,9 @@ createResponse[<|
 |>]
 
 
-createResponse[result_Association?responseQ] := 
-Module[{assoc = result}, 
+createResponse[result_Association?responseQ, serializers_Association] := 
+Module[{assoc = result, bodyString}, 
+	bodyString = AssocApply[serializers, ToString][assoc["Body"]]; 
 	If[Not[KeyExistsQ[assoc, "Message"]], assoc["Message"] = "OK"]; 
 	If[Not[KeyExistsQ[assoc, "Headers"]], assoc["Headers"] = <|
 		"Content-Length" -> StringLength[assoc["Body"]]
