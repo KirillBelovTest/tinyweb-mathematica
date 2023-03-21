@@ -103,19 +103,24 @@ Module[{head},
 (*HTTPHandler*)
 
 
-CreateType[HTTPHandler, {"Pipeline" -> <||>}]; 
+CreateType[HTTPHandler, {
+	"Pipeline" -> <||>, 
+	"Default" -> Function[$errorResponse], 
+	"Deserializers" -> deserializers, 
+	"Serializers" -> serializers
+}]; 
 
 
 handler_HTTPHandler[client_SocketObject, message_ByteArray] := 
 Module[{request, pipeline, result}, 
-	request = PrintReturn[parseRequest[message], "HTTP REQUEST PARSING", "Parsing `1`", #&]; 
+	request = PrintReturn[parseRequest[message, handler["Deserializers"]], "HTTP REQUEST PARSING", "Parsing `1`", #&]; 
 	pipeline = handler["Pipeline"]; 
 
 	(*Result: _String | _Association?responseQ*)
-	result = ConditionApply[pipeline][request]; 
+	result = AssocApply[pipeline, handler["Default"]][request]; 
 
-	(*Return: _String*)
-	createResponse[result]
+	(*Return: _String | _ByteArray*)
+	createResponse[result, handler["Serializers"]]
 ]
 
 
@@ -129,8 +134,21 @@ $httpMethods = {"GET", "PUT", "DELETE", "HEAD", "POST", "CONNECT", "OPTIONS", "T
 $httpEndOfHead = StringToByteArray["\r\n\r\n"]; 
 
 
-parseRequest[message_ByteArray] := 
-Module[{headBytes, head, headline, headers, body}, 
+$errorResponse = <|"Code" -> 404, "Body" -> "Not found"|>; 
+
+
+$deserializers = <|
+	"JSON" -> 
+		Function[AssocMatchQ[#1, <|"Content-Type" -> "application/json"|>] -> 
+			Function[ImportString[#2, "RawJSON"]]], 
+	"QueryEncoded" -> 
+		Function[AssocMatchQ[#1, <|"Content-Type" -> "application/x-www-form-urlencoded"|>] -> 
+			Function[Association[URLQueryDecode[#2]]]]
+|>; 
+
+
+parseRequest[message_ByteArray, deserializers_Association] := 
+Module[{headBytes, head, headline, headers, body, bodyExpr}, 
 	{headBytes, body} = ByteArraySplit[message, $httpEndOfHead -> 1]; 
 	head = ByteArrayToString[headBytes]; 
 	
@@ -151,10 +169,12 @@ Module[{headBytes, head, headline, headers, body},
   		StringExtract[head, "\r\n\r\n" -> 1, "\r\n" -> 2 ;; ]
 	]; 
 
+	bodyExpr = AssocApply[deserializers, #2&][headers, body]; 
+
 	(*Return: _Association*)
 	Join[
 		headline, 
-		<|"Headers" -> headers, "Body" -> body|>
+		<|"Headers" -> headers, "Body" -> bodyExpr|>
 	]
 ]; 
 

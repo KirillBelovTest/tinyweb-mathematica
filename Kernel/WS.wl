@@ -99,7 +99,7 @@ Module[{deserialize, serialize, frame, data, result, sender},
 		frameQ[client, message], 
 			frame = decodeFrame[message]; 
 			data = deserialize[frame]; 
-			result = ConditionApply[handler["Pipeline"]][client, data]; 
+			result = ConditionApply[handler["Pipeline"], Close[#1]&][client, data]; 
 			If[result != Null, encodeFrame[serialize[result]], Null], 
 
 		(*Return: _String*)

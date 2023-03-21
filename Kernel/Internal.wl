@@ -14,8 +14,8 @@ PrintReturn::usage =
 "PrintReturn[code, message, format] print info and return"
 
 
-ConditionApply::usage = 
-"ConditionApply[assoc][args] select rule if key[args] is True and resturn value[args]";
+AssocApply::usage = 
+"AssocApply[assoc][args] select rule if key[args] is True and resturn value[args]";
 
 
 Cache::usage = 
@@ -70,8 +70,8 @@ Module[{startTime, endTime, duration, result},
 ]
 
 
-ConditionApply[conditionAndFunctions: _Association | _List] := 
-Function[Last[SelectFirst[conditionAndFunctions, Function[cf, First[cf][##]]]][##]];
+AssocApply[conditionAndFunctions: _Association | _List, defalut_: Function[Null]] := 
+Function[Last[SelectFirst[conditionAndFunctions, Function[cf, First[cf][##]]], defalut][##]];
 
 
 SetAttributes[Cache, HoldFirst];

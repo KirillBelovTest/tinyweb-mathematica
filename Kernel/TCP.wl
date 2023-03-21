@@ -90,7 +90,6 @@ Module[{data, dataLength, buffer, last, expectedLength, storedLength, completed}
 		expectedLength = last["ExpectedLength"]; 
 		storedLength = last["StoredLength"]; , 
 	(*Else*)
-		Print["CompleteHandler"]; 
 		expectedLength = ConditionApply[server["CompleteHandler"]][client, data]; 
 		storedLength = 0; 
 	]; 
